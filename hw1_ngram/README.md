@@ -1,48 +1,46 @@
-# hw1_ngram
+# hw1：字符级 n-gram 语言模型
 
-Character-level n-gram language models, written from scratch. No dependencies.
+从零实现，不依赖任何第三方库。
 
-## What is here
+## 目录
 
 ```
 ngram/
-  corpus.py     cleaning and sentence splitting
-  model.py      counts + MLE / AddK / Stupid Backoff / Kneser-Ney
-  evaluate.py   perplexity, unseen n-gram ratio
-  generate.py   sampling
+  corpus.py     文本清洗与分句
+  model.py      计数 + MLE / AddK / Stupid Backoff / Kneser-Ney
+  evaluate.py   困惑度、未登录 n-gram 比例
+  generate.py   采样
   cli.py        `python -m ngram build|train`
 scripts/
-  parse_peopledaily.py   tagged 1998 release -> clean sentences
+  parse_peopledaily.py   人民日报 1998 语料 → 干净句子
 tests/
-  test_ngram.py          15 tests
+  test_ngram.py          15 个单元测试
 data/
-  sample.txt   900 sentences from the real corpus, enough to run everything
+  sample.txt     真语料的 900 句切片，足够跑通全流程
 results/
-  ngram_results.json   committed output of the full run
+  ngram_results.json   全量跑一次的结果
 ```
 
-## Usage
+## 用法
 
 ```bash
-# fit orders 1..5 on the sample and print a table
+# 用自带样本训练 1–5 阶，打印困惑度表
 python -m ngram train --corpus data/sample.txt --out results
 
-# build a corpus from the tagged People's Daily release
+# 从人民日报 1998 语料构建训练集
 python scripts/parse_peopledaily.py --src data/raw/*.txt --out data/corpus.txt --max-chars 2000000
 
-# or from any plain text
+# 也可以直接处理任意纯文本
 python -m ngram build --raw data/raw/*.txt --out data/corpus.txt
 ```
 
-Samples are written to stdout and into `results/ngram_results.json` together
-with timings, entry counts and all perplexities.
+采样结果会同时打印到终端并写进 `results/ngram_results.json`，附带建表耗时、条目数和五种方法的困惑度。
 
-## Results
+## 结果
 
-People's Daily 1998, first two million characters of the six-month release:
-47,066 sentences, 4,614 distinct characters, 9:1 train/test split.
+人民日报 1998 年上半年，取前 200 万字：47066 句、4614 个不同字符，按 9:1 切分训练与测试。
 
-| order | entries | build (s) | unseen n-grams | MLE | Laplace | Add-0.01 | Stupid Backoff | Kneser-Ney |
+| 阶数 | 条目数 | 建表(s) | 未见比例 | MLE | Laplace | Add-0.01 | Stupid Backoff | Kneser-Ney |
 |---|---|---|---|---|---|---|---|---|
 | 1 | 4,615 | 0.39 | 0.03% | ∞ | 661.66 | 662.55 | 663.39 | — |
 | 2 | 282,774 | 1.30 | 8.2% | ∞ | 221.52 | 107.62 | 83.37 | 92.70 |
@@ -50,44 +48,35 @@ People's Daily 1998, first two million characters of the six-month release:
 | 4 | 2,439,933 | 4.69 | 61.0% | ∞ | 2193.57 | 586.14 | 67.30 | **49.58** |
 | 5 | 3,945,268 | 6.74 | 75.2% | ∞ | 2964.98 | 1282.44 | 128.25 | 50.75 |
 
-Whole run: 57 seconds, single core.
+整轮 57 秒，单核。
 
-Three things fall out:
+三个结论：
 
-1. MLE is unusable at every order — one unseen n-gram zeroes the whole sentence probability. At order 5, 75% of test n-grams are unseen.
-2. Laplace gets steadily worse with order, 662 to 2965. A fixed pseudo-count spread over a 4,614-character vocabulary over-smooths exactly where the distribution is sharpest.
-3. Kneser-Ney is best everywhere and bottoms out at order 4 (49.58), then rises slightly at order 5. That is the data-size wall: 3.9M five-gram entries from 1.8M training characters means most contexts are singletons, so backoff beats the estimate.
+1. MLE 每个阶数都是无穷大——只要测试集里有一个没见过的 n-gram，整句概率就归零。5 阶时 75% 的测试 n-gram 没见过。
+2. Laplace 随阶数一路变差（662 → 2965）。固定的伪计数摊给 4614 个字符，正好在分布最尖的地方过度平滑。
+3. Kneser-Ney 在所有阶数上最好，4 阶触底（49.58），5 阶回到 50.75。这是语料规模的墙：180 万字撑不起 390 万个五元组，大部分上下文只出现一次，回退比估计更可靠。
 
-The last point is the interesting one, and it is the empirical form of "increasing *n* does not fix long distance dependencies".
+第 3 点也是"把 n 加大不能解决长依赖"的实测版本。
 
-## Sampling
+## 续写
 
-Fixed prompt `在阳光明媚的五月`, 100 characters, temperature 1:
+固定开头"在阳光明媚的五月"，续 100 字，temperature = 1：
 
 ```
-[kneser-ney, order 3]
-在阳光明媚的五月的社会主义市场去年月，大厅里马科夫，等等。第十八日在工作...
+[Kneser-Ney, 3 阶]
+在阳光明媚的五月的社会主义市场去年月，大厅里马科夫，等等。第十八日在工作……
 
-[kneser-ney, order 5]
-在阳光明媚的五月的风”在山东青岛市委市政府统一公布，自年月日起，北京市开展...
+[Kneser-Ney, 5 阶]
+在阳光明媚的五月的风"在山东青岛市委市政府统一公布，自年月日起，北京市开展……
 
-[stupid backoff, order 3]
-在阳光明媚的五月端的建立外交部发言人阿地力雄厚爽的问题，又精神经济份合作...
+[Stupid Backoff, 3 阶]
+在阳光明媚的五月端的建立外交部发言人阿地力雄厚爽的问题，又精神经济份合作……
 ```
 
-Now that the corpus is news, the samples contain real collocations (`外交部发言人`,
-`市委市政府`, `开展送温暖活动`), but none of them produce a grammatical clause.
-That is the ceiling of a character-level Markov model, and order 5 is not
-visibly better than order 3 even though its perplexity is slightly lower.
+换成新闻语料后，续写里能看到真实搭配（`外交部发言人`、`市委市政府`、`开展送温暖活动`），但没有一句成句。字符级马尔可夫模型的上限就在这，5 阶并不比 3 阶好读。
 
-## Notes
+## 几点说明
 
-- The cleaning step is not cosmetic. This release carries pinyin in braces
-  (`历史上{shang5}`), sentence ids at the head of every line, and `〓` where the
-  original encoder had no glyph. All three are removed before counting;
-  leaving them in inflates the vocabulary with annotation instead of language.
-- Kneser-Ney at order 1 is not computed: continuation counts require bigrams.
-  The CLI skips it rather than printing a degenerate number.
-- `data/corpus.txt` is not committed (4 MB of derived text). `sample.txt` is a
-  900-line slice so the tests and the quick-start command work without the raw
-  release.
+- 清洗不是可有可无的步骤。这批语料带花括号注音（`历史上{shang5}`）、行首句子编号、以及 `〓` 占位符，三者不处理，词表里塞满的是标注而不是语言。
+- 一元模型不算 Kneser-Ney：续接计数需要二元组才有定义。CLI 直接跳过，不打印一个假数字。
+- `data/corpus.txt` 没有提交（4MB 派生文本），`sample.txt` 是 900 句切片，保证测试和快速开始命令在没有原始语料时也能跑。

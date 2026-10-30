@@ -1,72 +1,61 @@
-# llm-nlp-homework
+# 大语言模型与应用实践 · 课程作业
 
-Coursework for *大语言模型与应用实践* (Fall 2026). Two projects, each self-contained.
+2026 年秋季《大语言模型与应用实践》的编程作业，两个子项目各自独立、能单独运行。
 
-| Project | What it does | Status |
+| 项目 | 内容 | 状态 |
 |---|---|---|
-| [`hw1_ngram`](hw1_ngram) | Character-level n-gram language models with five smoothing schemes, perplexity comparison, sampling | tests pass, results committed |
-| [`hw2_veccls`](hw2_veccls) | Skip-gram with negative sampling from scratch, plus a fastText-style text classifier, and a gensim baseline | tests pass, results committed |
+| [`hw1_ngram`](hw1_ngram) | 字符级 n-gram 语言模型，五种平滑方法，困惑度对比与文本续写 | 测试通过，结果已提交 |
+| [`hw2_veccls`](hw2_veccls) | 从零实现 skip-gram 与负采样，FastText 式文本分类，附 gensim 基线 | 测试通过，结果已提交 |
 
-## Why hand-rolled implementations
+## 为什么是手写实现
 
-The machine this was developed on has no PyPI access, so `gensim`, `jieba`,
-`scikit-learn` and `torch` could not be installed. Rather than submit something
-that was never run, both projects implement the core algorithms directly on
-`numpy` and the standard library, and `hw2_veccls/gensim_baseline.py` keeps the
-short gensim version for machines that have it.
+写这套代码的机器装不上 gensim：没有 PyPI 访问，`jieba`、`scikit-learn`、`torch` 也都缺，只有 numpy。
 
-That turned out to be useful for its own sake: writing the negative sampling
-loop and the Kneser-Ney recursion by hand makes the parts that libraries hide
-visible.
+与其交一份"没跑过"的作业，不如把算法自己写一遍。写的过程中反而看清了几件库会替你藏起来的事：负采样里词频的 0.75 次方到底怎么采样、Kneser-Ney 的续接计数为什么能救回退、高频词下采样对常见字的伤害有多大。
 
-## Quick start
+`hw2_veccls/gensim_baseline.py` 保留了标准 gensim 版本，在有环境的机器上可以直接跑，用来对照。
+
+## 快速开始
 
 ```bash
-# hw1: fit 1..5-gram models and print perplexity
+# hw1：训练 1–5 阶模型并输出困惑度
 cd hw1_ngram
 python -m ngram train --corpus data/sample.txt --out results
 
-# hw2: embeddings + classification
+# hw2：词向量 + 文本分类
 cd ../hw2_veccls
-python -m veccls run --data data/labeled.tsv --out results
+python -m veccls run --data data/labeled.tsv --embed-corpus data/body.txt --classes 2 4 8 --out results
 ```
 
-Both need Python 3.10+; `hw2` needs `numpy`. There are no other dependencies.
+需要 Python 3.10 以上，`hw2` 需要 numpy，没有别的依赖。
 
-## Tests
+## 测试
 
 ```bash
-cd hw1_ngram && python -m unittest discover -s tests -v
-cd hw2_veccls && python -m unittest discover -s tests -v
+cd hw1_ngram && python -m unittest discover -s tests -v   # 15 个
+cd hw2_veccls && python -m unittest discover -s tests -v  # 12 个
 ```
 
-## Data
+## 数据
 
-Both projects run on the People's Daily 1998 release (GB18030, six monthly
-files). The raw files are not redistributable, so what is committed is the
-derived material: a 900-sentence slice for `hw1`, and 1,117 keyword-labelled
-headlines for `hw2`. Both parsers handle the release as shipped and are the
-entry point for rebuilding everything:
+两个项目都跑在人民日报 1998 年上半年那六个文件上（GB18030 编码）。原始语料不方便随仓库分发，所以提交的是派生材料：`hw1` 里 900 句的切片，`hw2` 里 1117 条按关键词标注的标题。两个解析脚本按原格式处理，重跑全量数据从这两条命令开始：
 
 ```bash
-# hw1: 2M characters of clean sentences
+# hw1：200 万字的干净句子
 python hw1_ngram/scripts/parse_peopledaily.py --src data/raw/*.txt \
     --out hw1_ngram/data/corpus.txt --max-chars 2000000
 
-# hw2: labelled headlines plus body text for the embeddings
+# hw2：带标签的标题 + 用于训练词向量的正文
 python hw2_veccls/scripts/parse_peopledaily.py --src data/raw/*.txt \
     --out hw2_veccls/data/labeled.tsv --body-out hw2_veccls/data/body.txt --per-label 140
 ```
 
-The release needs a little care: sentence ids sit at the head of every line,
-pinyin appears in braces (`历史上{shang5}`), `〓` marks characters the original
-encoder could not represent, and one monthly file has three undecodable bytes
-around offset 4.25M.
+这批语料有几个要处理的地方：每行行首是句子编号，部分词后面跟着花括号注音（`历史上{shang5}`），`〓` 表示原编码表里没有的字符，另外三月那个文件在 4.25MB 附近有 3 个坏字节，严格解码会直接失败。
 
-## Notes on honesty
+## 关于结果
 
-The results are reported as they came out. Kneser-Ney bottoming out at order 4
-rather than 5 is a data-size wall, not a bug. The `译` neighbours in `hw2` are
-name characters because that is what the corpus contains. The 8-class accuracy
-in `hw2` is 0.80 and the test set is only 223 headlines, so it is not a precise
-number.
+数字都是跑出来的，没有修饰：
+
+- Kneser-Ney 在 4 阶触底、5 阶回升，是语料规模造成的，不是实现问题。
+- `hw2` 里 `译` 的近邻全是人名用字，因为这些字在这批新闻里就是跟着人名出现的。
+- 8 类分类准确率 0.80，测试集只有 223 条，别当成精确值。

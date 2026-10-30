@@ -1,99 +1,79 @@
-# hw2_veccls
+# hw2：词向量与文本分类
 
-Word embeddings and text classification, numpy only.
+纯 numpy 实现，不依赖 gensim。
 
-## What is here
+## 目录
 
 ```
 veccls/
-  corpus.py      TSV loading, cleaning, split
-  skipgram.py    skip-gram + negative sampling + frequent-word subsampling
-  classifier.py  fastText-style bag-of-features softmax
+  corpus.py      TSV 读取、清洗、切分
+  skipgram.py    skip-gram + 负采样 + 高频词下采样
+  classifier.py  FastText 式词袋特征 + softmax
   cli.py         `python -m veccls run`
-gensim_baseline.py   same experiment with gensim + sklearn, for machines that have them
+gensim_baseline.py    有 gensim 时跑的对照版本
 scripts/
-  parse_peopledaily.py   headlines -> topic labels; body text for embeddings
+  parse_peopledaily.py   标题 → 主题标签；正文 → 训练语料
 tests/
-  test_veccls.py     12 tests
+  test_veccls.py         12 个单元测试
 data/
-  labeled.tsv   1,117 headlines, 8 topics, ~140 each
-  body.txt      not committed; regenerated from the raw release
+  labeled.tsv    1,117 条标题，8 个主题，每类约 140 条
 results/
-  veccls_results.json, vocab.txt
+  veccls_results.json、vocab.txt
 ```
 
-## Data
+## 数据
 
-Headlines are taken from the People's Daily 1998 release: the first line of
-every article, cleaned the same way as in `hw1_ngram`. The corpus has no topic
-labels, so `scripts/parse_peopledaily.py` assigns each headline to the topic
-with the most keyword hits among eight hand-written lists (体育 金融 教育 文化
-科技 医疗 农业 法律), and drops headlines that match nothing or tie.
+标题取自人民日报 1998 年上半年那六个文件的每篇文章首行，清洗方式与 `hw1` 一致。语料本身没有主题标注，所以标签是 `scripts/parse_peopledaily.py` 按关键词规则打出来的：八组关键词（体育、金融、教育、文化、科技、医疗、农业、法律），每条标题归到命中最多的一类，一条都没命中或者两类打平的直接丢掉。
 
 ```bash
 python scripts/parse_peopledaily.py --src data/raw/*.txt \
     --out data/labeled.tsv --body-out data/body.txt --per-label 140
 ```
 
-`--per-label 140` is not arbitrary: 医疗 only yields 141 usable headlines in the
-six-month release, so 140 is the largest balanced set. Uneven classes would make
-the 2/4/8 comparison meaningless.
+`--per-label 140` 不是随手定的：六个月里"医疗"只能凑出 141 条可用标题，140 是能保持八类均衡的最大值。类别大小不一致的话，2 类/4 类/8 类的对比就没有意义了。
 
-Embeddings are trained on body text, not headlines. Headlines average 15
-characters, which is far too little to place 2,600 characters; `--embed-corpus`
-takes a body-text file for that.
+词向量在正文上训练，不在标题上。标题平均 15 个字，2600 多个字的词表根本铺不开，`--embed-corpus` 就是为这件事留的参数。
 
-## Usage
+## 用法
 
 ```bash
 python -m veccls run --data data/labeled.tsv --embed-corpus data/body.txt \
     --classes 2 4 8 --out results
 ```
 
-## Results
+## 结果
 
-Embeddings: 400k characters of body text, dim 64, window 3, 5 negatives,
-3 epochs, 187 s on one core. Classifier: mean-pooled features, 40 epochs.
+词向量：40 万字正文，维度 64，窗口 3，负采样 5，3 个 epoch，单核 187 秒。分类器：均值池化特征，40 个 epoch。
 
-| classes | random / chars | random / chars+bigrams | skip-gram / chars | skip-gram / chars+bigrams |
+| 类别数 | 随机/单字 | 随机/单字+二元组 | skip-gram/单字 | skip-gram/单字+二元组 |
 |---|---|---|---|---|
-| 2 (体育, 金融) | 0.7937 | 0.7937 | 0.9841 | **1.0000** |
-| 4 (+教育, 文化) | 0.6694 | 0.7258 | 0.8065 | **0.8226** |
-| 8 (all) | 0.5426 | 0.5785 | 0.7489 | **0.8027** |
+| 2 类（体育、金融） | 0.7937 | 0.7937 | 0.9841 | **1.0000** |
+| 4 类（加教育、文化） | 0.6694 | 0.7258 | 0.8065 | **0.8226** |
+| 8 类 | 0.5426 | 0.5785 | 0.7489 | **0.8027** |
 
-Test sets are 63 / 124 / 223 headlines, so the 8-class numbers carry a couple of
-points of noise.
+测试集分别是 63、124、223 条，8 类那一行有一两个点的波动，别当精确值看。
 
-Nearest neighbours from the skip-gram run:
+近邻抽查：
 
 ```
-模 → 规(0.64) 颇(0.62) 范(0.61) 拟(0.61) 矩(0.59)     规模, 模范, 模拟
+模 → 规(0.64) 颇(0.62) 范(0.61) 拟(0.61) 矩(0.59)      规模、模范、模拟
 检 → 测(0.67) 查(0.66) 嫌(0.61) 督(0.60) 逮(0.56) 监(0.54)
-奖 → 铜(0.65) 励(0.60) 获(0.52) 颁(0.51)              铜牌, 奖励, 获奖
-译 → 岱(0.83) 琦(0.83) 雯(0.82) 娟(0.81)              names, i.e. junk
+奖 → 铜(0.65) 励(0.60) 获(0.52) 颁(0.51)               铜牌、奖励、获奖
+译 → 岱(0.83) 琦(0.83) 雯(0.82) 娟(0.81)               人名用字，失败
 ```
 
-`模`, `检`, `奖` all land next to characters that form real compounds with them.
-`译` fails: in this corpus it shows up inside transliterated personal names, so
-its neighbours are name characters. That is a fair finding and it is left in.
+前三个说明向量确实抓到了搭配。第四个是失败案例：这批新闻里"译"大量出现在音译人名中，它的上下文被名字占满了。这个反例留在仓库里。
 
-## What the ablation says
+## 消融说明了什么
 
-- Pretrained initialisation is worth a lot: +19 pts at 2 classes, +13.7 at 4,
-  +20.6 at 8 (against random init, chars only). With ~900 training headlines the
-  classifier cannot learn a semantic space from scratch.
-- Bigrams help once there are enough classes (+1.6 at 4, +5.4 at 8). This is the
-  opposite of what the same experiment showed on the smaller lecture corpus,
-  where mean pooling diluted them — with 900 headlines that encode eight topics,
-  two-character cues like 股价/球队 carry the signal.
+- 预训练初始化收益很大：2 类 +19 个点，4 类 +13.7，8 类 +20.6（都相对随机初始化、单字特征）。训练集只有九百条标题时，分类器没法从零学出一个语义空间。
+- 二元组只有在类别多的时候才帮上忙（4 类 +1.6，8 类 +5.4）。这和在更小的课件语料上得到的结论相反——那次均值池化把二元组稀释掉了；这次数据换成了标题，"股价""球队""法院""水稻"这类两字线索本身就很接近类别标记，池化之后仍有区分度。
 
-## gensim baseline
+## gensim 基线
 
 ```bash
 pip install gensim jieba scikit-learn
 python gensim_baseline.py --data data/labeled.tsv
 ```
 
-`gensim.models.FastText` is unsupervised subword embedding; the supervised
-classifier is `fasttext.train_supervised` from Facebook's package. They are
-different things and are often conflated.
+一个容易混的点：`gensim.models.FastText` 是无监督的子词向量，带 `__label__` 的有监督分类在 Facebook 的 `fasttext` 包里，两者不是一回事。
