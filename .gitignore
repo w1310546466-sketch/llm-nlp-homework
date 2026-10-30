@@ -1,0 +1,6 @@
+﻿# Data and outputs that are regenerated
+data/raw/
+hw1_ngram/data/corpus*.txt
+hw2_veccls/data/body.txt
+*.npy
+*.txt.tmp
