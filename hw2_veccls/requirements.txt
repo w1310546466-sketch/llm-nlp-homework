@@ -1,0 +1,2 @@
+# Only numpy is required; everything else is standard library.
+numpy>=1.24
