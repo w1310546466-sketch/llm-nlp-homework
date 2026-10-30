@@ -1,0 +1,24 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 模型、权重与缓存，体积大且可重新下载
+models/
+*.bin
+*.safetensors
+.hf/
+results/model/
+
+# 语料
+data/corpus.txt
+data/古文.txt
+data/raw/
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

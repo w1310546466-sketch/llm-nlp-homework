@@ -1,11 +1,12 @@
 # 大语言模型与应用实践 · 课程作业
 
-2026 年秋季《大语言模型与应用实践》的编程作业，两个子项目各自独立、能单独运行。
+2026 年秋季《大语言模型与应用实践》的编程作业，三个子项目各自独立、能单独运行。
 
 | 项目 | 内容 | 状态 |
 |---|---|---|
 | [`hw1_ngram`](hw1_ngram) | 字符级 n-gram 语言模型，五种平滑方法，困惑度对比与文本续写 | 测试通过，结果已提交 |
 | [`hw2_veccls`](hw2_veccls) | 从零实现 skip-gram 与负采样，FastText 式文本分类，附 gensim 基线 | 测试通过，结果已提交 |
+| [`bert_punc`](bert_punc) | BERT 逐字预测标点，长文用重叠窗口 + 批处理解码 | 已训练，F1 0.914 |
 
 ## 为什么是手写实现
 
@@ -25,20 +26,25 @@ python -m ngram train --corpus data/sample.txt --out results
 # hw2：词向量 + 文本分类
 cd ../hw2_veccls
 python -m veccls run --data data/labeled.tsv --embed-corpus data/body.txt --classes 2 4 8 --out results
+
+# bert_punc：训练断句模型（需要 GPU 或耐心）
+cd ../bert_punc
+python train.py --corpus data/corpus.txt --epochs 2 --batch 32 --out results
 ```
 
-需要 Python 3.10 以上，`hw2` 需要 numpy，没有别的依赖。
+需要 Python 3.10 以上。`hw1` 只用标准库，`hw2` 需要 numpy，`bert_punc` 需要 torch 与 transformers。
 
 ## 测试
 
 ```bash
 cd hw1_ngram && python -m unittest discover -s tests -v   # 15 个
 cd hw2_veccls && python -m unittest discover -s tests -v  # 12 个
+cd bert_punc && python -m unittest discover -s tests -v   # 11 个
 ```
 
 ## 数据
 
-两个项目都跑在人民日报 1998 年上半年那六个文件上（GB18030 编码）。原始语料不方便随仓库分发，所以提交的是派生材料：`hw1` 里 900 句的切片，`hw2` 里 1117 条按关键词标注的标题。两个解析脚本按原格式处理，重跑全量数据从这两条命令开始：
+三个项目都跑在人民日报 1998 年上半年那六个文件上（GB18030 编码）。原始语料不方便随仓库分发，所以提交的是派生材料：`hw1` 里 900 句的切片，`hw2` 里 1117 条按关键词标注的标题。`bert_punc` 另外用《三国演义》做零日文迁移测试，文本可重新下载。解析脚本按原格式处理，重跑全量数据从这几条命令开始：
 
 ```bash
 # hw1：200 万字的干净句子
@@ -48,6 +54,10 @@ python hw1_ngram/scripts/parse_peopledaily.py --src data/raw/*.txt \
 # hw2：带标签的标题 + 用于训练词向量的正文
 python hw2_veccls/scripts/parse_peopledaily.py --src data/raw/*.txt \
     --out hw2_veccls/data/labeled.tsv --body-out hw2_veccls/data/body.txt --per-label 140
+
+# bert_punc：断句训练语料
+python bert_punc/scripts/parse_peopledaily.py --src data/raw/*.txt \
+    --out bert_punc/data/corpus.txt --max-chars 2000000
 ```
 
 这批语料有几个要处理的地方：每行行首是句子编号，部分词后面跟着花括号注音（`历史上{shang5}`），`〓` 表示原编码表里没有的字符，另外三月那个文件在 4.25MB 附近有 3 个坏字节，严格解码会直接失败。
@@ -59,3 +69,5 @@ python hw2_veccls/scripts/parse_peopledaily.py --src data/raw/*.txt \
 - Kneser-Ney 在 4 阶触底、5 阶回升，是语料规模造成的，不是实现问题。
 - `hw2` 里 `译` 的近邻全是人名用字，因为这些字在这批新闻里就是跟着人名出现的。
 - 8 类分类准确率 0.80，测试集只有 223 条，别当成精确值。
+- `bert_punc` 的标点模型在现代文上 F1 0.914，迁到《三国演义》只有 0.50，掉得很厉害，报告里写了错在哪。
+- `bert_punc` 的批处理解码只比串行快一倍左右，不是数量级的差距，原因在报告里拆开了。

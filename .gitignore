@@ -9,6 +9,9 @@ venv/
 data/raw/
 hw1_ngram/data/corpus*.txt
 hw2_veccls/data/body.txt
+bert_punc/data/corpus*.txt
+bert_punc/data/古文.txt
+bert_punc/results/model/
 *.npy
 *.txt.tmp
 
