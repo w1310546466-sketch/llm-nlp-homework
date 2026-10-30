@@ -1,4 +1,4 @@
-"""Character-level n-gram language models with several smoothing schemes."""
+"""字符级 n-gram 语言模型，支持多种平滑方法。"""
 
 from .model import Counts, MLE, AddK, StupidBackoff, KneserNey, build
 

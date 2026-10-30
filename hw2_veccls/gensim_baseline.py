@@ -1,15 +1,13 @@
-"""The same experiment with gensim, for machines that have it installed.
+"""同一套实验的 gensim 版本，给装了 gensim 的机器用。
 
-The numpy implementation in `veccls/` exists because this box had no PyPI
-access. On a normal machine, this file is the shorter path and produces
-vectors that are a reasonable sanity check against `veccls`.
+`veccls/` 里的 numpy 实现是因为这台机器连不上 PyPI，装不了 gensim。在正常
+机器上，这个文件是更短的路，也可以用来给 `veccls` 的结果做交叉验证。
 
     pip install gensim jieba scikit-learn
     python gensim_baseline.py --data data/labeled.tsv
 
-Note on naming: `gensim.models.FastText` is unsupervised subword embeddings.
-The supervised classifier is `fasttext.train_supervised` from Facebook's
-package, which gensim does not ship. The two get mixed up often.
+顺带澄清一个常被混用的名字：`gensim.models.FastText` 是无监督的子词向量，
+带 `__label__` 的有监督分类在 Facebook 的 `fasttext` 包里，gensim 并不提供。
 """
 
 import argparse
@@ -34,7 +32,8 @@ def load(path):
 
 
 def train_embeddings(texts, dim=100, sg=1):
-    tokenized = [list(t) for t in texts]  # character level, no segmenter needed
+    # 字符级切分，不需要分词器
+    tokenized = [list(t) for t in texts]
     model = Word2Vec(tokenized, vector_size=dim, window=5, min_count=3,
                      sg=sg, negative=5, sample=1e-3, epochs=5, workers=4, seed=42)
     return model
@@ -71,7 +70,7 @@ def main():
     test = [rows[i] for i in sorted(test_ids)]
 
     w2v = train_embeddings([t for _, t in train])
-    print("neighbours for 译:", w2v.wv.most_similar("译", topn=6))
+    print("译 的近邻：", w2v.wv.most_similar("译", topn=6))
 
     for n_class in args.classes:
         keep = sorted({lab for lab, _ in rows})[:n_class]
@@ -81,7 +80,7 @@ def main():
         Xte = sentence_vectors(w2v, [t for _, t in te])
         clf = LogisticRegression(max_iter=2000).fit(Xtr, [lab for lab, _ in tr])
         acc = accuracy_score([lab for lab, _ in te], clf.predict(Xte))
-        print(f"{n_class} classes: {acc:.3f}")
+        print(f"{n_class} 类：{acc:.3f}")
 
 
 if __name__ == "__main__":

@@ -1,8 +1,8 @@
-"""Bag-of-characters classifier on top of embeddings.
+"""在词向量之上做词袋分类。
 
-Same shape as fastText supervised: average the vectors of the text's features,
-then a linear layer with softmax. The only trick here is that the feature table
-can be initialised from skip-gram vectors instead of random numbers.
+形状和 fastText 有监督版本一致：把文本里各个特征的向量取平均，接一层线性
+变换和 softmax。这里唯一多出的一点，是特征表可以用 skip-gram 的向量初始化，
+而不是随机数。
 """
 
 import numpy as np
@@ -43,6 +43,7 @@ class BagRegressor:
     def predict(self, X):
         if not X:
             return np.array([], dtype=int)
+        # X 是样本列表，先转成 (n, dim)，再和 w 的转置相乘
         X = np.asarray(X)
         return np.argmax(X @ self.w.T + self.b, axis=1)
 
@@ -53,7 +54,7 @@ class BagRegressor:
 
 
 class FeatureTable:
-    """Holds one vector per unigram character and per bigram."""
+    """一个字一行、一个二元组一行的向量表。"""
 
     def __init__(self, chars, bigrams, dim, seed=1):
         self.chars = list(chars)
@@ -65,6 +66,10 @@ class FeatureTable:
 
     @classmethod
     def from_skipgram(cls, sg, bigrams=(), dim=None):
+        """用 skip-gram 的字向量填表；二元组取两个字向量的均值。
+
+        均值初始化正对应 fastText 用子词组合出新词向量的做法。
+        """
         dim = dim or sg.dim
         table = cls(sg.vocab, bigrams, dim)
         table.table[:len(sg.vocab)] = sg.w_in

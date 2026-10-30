@@ -1,16 +1,15 @@
-"""Corpus loading and cleaning.
+"""语料读取与清洗。
 
-The course corpus ships as word-segmented text with POS tags. Before counting
-anything those tags have to go, otherwise the model spends its probability
-mass on annotation conventions instead of language.
+课程给的语料是分词并标注了词性的文本。计数之前必须把标注去掉，否则模型
+会把概率质量花在标注规范上，而不是语言本身。
 """
 
 import re
 from pathlib import Path
 
 CJK = re.compile(r"[\u4e00-\u9fff]")
-# Keep hanzi and Chinese punctuation only. Latin fragments, pipes and the
-# invisible word-joiner that shows up in exported slides are noise here.
+# 只保留汉字和中文标点。拉丁字母、竖线，以及导出幻灯片时带的不可见连接符
+# 在这里都算噪声。
 KEEP = re.compile(r"[^\u4e00-\u9fff，。！？；：、“”‘’（）《》〈〉…—·]")
 
 MIN_LEN = 8
@@ -23,7 +22,7 @@ def clean_line(line: str) -> str:
         return ""
     if line.startswith("--- slide"):
         return ""
-    if re.fullmatch(r"\d+\s*/\s*\d+", line):  # page footer like "123 / 150"
+    if re.fullmatch(r"\d+\s*/\s*\d+", line):  # 页脚形如 “123 / 150”
         return ""
     if "http://" in line or "https://" in line:
         return ""
@@ -55,7 +54,7 @@ def sentences_from_file(path: Path):
 
 
 def build_corpus(raw_files, out_path: Path) -> dict:
-    """Write a cleaned, deduplicated corpus and return basic stats."""
+    """写出清洗并去重后的语料，返回基本统计。"""
     seen = set()
     kept = []
     for path in raw_files:

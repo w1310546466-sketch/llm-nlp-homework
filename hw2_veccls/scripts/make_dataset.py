@@ -1,9 +1,8 @@
-"""Build the bundled `data/labeled.tsv` from the courseware text dumps.
+"""从课件文本重建一份可用的分类数据集。
 
-The course hands out People's Daily 9801 for the classification part, which is
-not redistributable here. This script rebuilds a small substitute set from the
-lecture slides so the repo is runnable end to end: each sentence is labelled
-with the lecture it came from (L1 / L2 / L3).
+课程分发的是人民日报 9801，这里不方便再分发，所以早期版本用课件正文替代：
+每句按所属讲次打标签（L1 / L2 / L3）。现在仓库里提交的 `data/labeled.tsv`
+已经换成人民日报标题，这个脚本保留下来，是为了替换语料时仍能跑通全流程。
 
     python scripts/make_dataset.py --src ../_text_*.txt --out data/labeled.tsv
 """
@@ -78,7 +77,7 @@ def main():
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text("\n".join(lines), encoding="utf-8")
-    print(f"{out}: {len(lines)} rows, "
+    print(f"{out}：{len(lines)} 条，"
           f"{ {k: min(len(v), args.per_label) for k, v in buckets.items()} }")
 
 

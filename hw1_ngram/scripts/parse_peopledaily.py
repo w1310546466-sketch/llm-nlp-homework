@@ -1,14 +1,13 @@
-"""Parse the People's Daily 1998 release into a clean character corpus.
+"""把人民日报 1998 版语料解析成干净的字符级训练语料。
 
-The files in this release look like:
+这批文件长这样：
 
     19980101-01-001-006 在 １９９８年 来临 之际 ， 我 十分 高兴 地 通过 ...
     19980101-01-001-007 １９９７年 ， 是 中国 发展 历史 上{shang5} 非常 重要 的 ...
 
-So: GB18030 text, one sentence per line, the sentence id at the start of the
-line, words separated by spaces, punctuation as its own token, and pinyin in
-braces attached to some words. Nothing here is a POS tag -- the tags live in the
-other release -- so cleaning is mostly dropping the ids and the braces.
+所以：GB18030 编码，一行一句，句子编号在行首，词之间用空格分开，标点单独
+成项，部分词后面带花括号注音。这里没有词性标注——带词性的是另一个版本——
+所以清洗工作主要是去掉行首编号和花括号。
 
     python scripts/parse_peopledaily.py --src data/raw/*.txt --out data/corpus.txt
 """
@@ -21,8 +20,8 @@ from pathlib import Path
 LINE_ID = re.compile(r"^(\d{8}-\d{2}-\d{3}-\d{3})\s+")
 PINYIN = re.compile(r"\{[^}]*\}")
 BRACKETS = re.compile(r"[\[\]{}]")
-# Keep hanzi and Chinese punctuation. Full-width digits, latin fragments and the
-# corpus' `〓` placeholder for unencodable characters all land in the bin here.
+# 只保留汉字和中文标点。全角数字、拉丁字母片段，以及语料里表示"该字无法编码"
+# 的 〓 占位符，都在这里被丢掉。
 KEEP = re.compile(r"[^\u4e00-\u9fff，。！？；：、“”‘’（）《》…—]")
 ENCODINGS = ("utf-8", "gb18030", "gbk")
 
@@ -34,9 +33,9 @@ def read_text(path: Path) -> str:
             return data.decode(enc)
         except UnicodeDecodeError:
             continue
-    # One of the monthly files has a few undecodable bytes; see hw2's parser.
+    # 三月份那个文件有几处坏字节，严格解码会失败，退回容错解码。
     text = data.decode("gb18030", errors="replace")
-    print(f"  note: {path.name} decoded with {text.count(chr(0xFFFD))} replacement chars")
+    print(f"  注意：{path.name} 有 {text.count(chr(0xFFFD))} 个替换字符")
     return text
 
 
@@ -46,7 +45,7 @@ def to_sentences(line: str):
         return []
     text = BRACKETS.sub("", "".join(body.split()))
     text = KEEP.sub("", text)
-    # One line is normally one sentence; split anyway because a few lines carry two.
+    # 通常一行就是一句；偶尔一行里有两句，这里再切一次。
     return [s for s in re.split(r"(?<=[。！？])", text) if s.strip()]
 
 
@@ -54,7 +53,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", nargs="*", default=None)
     ap.add_argument("--out", default="data/corpus.txt")
-    ap.add_argument("--max-chars", type=int, default=0, help="0 means everything")
+    ap.add_argument("--max-chars", type=int, default=0, help="0 表示不限")
     ap.add_argument("--min-length", type=int, default=8)
     args = ap.parse_args()
 
@@ -79,7 +78,7 @@ def main():
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text("\n".join(out_lines), encoding="utf-8")
-    print(f"files {len(paths)} | sentences {len(out_lines)} | chars {chars} -> {out}")
+    print(f"文件 {len(paths)} 个 | 句子 {len(out_lines)} 句 | 字数 {chars} -> {out}")
 
 
 if __name__ == "__main__":

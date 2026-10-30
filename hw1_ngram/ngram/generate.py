@@ -1,4 +1,4 @@
-"""Sampling from an n-gram model."""
+"""从 n-gram 模型采样生成文本。"""
 
 import random
 
@@ -6,7 +6,7 @@ from .model import BOS
 
 
 def alphabet(model):
-    """Characters the model has seen, excluding boundary symbols."""
+    """模型见过的字符，去掉边界符号。"""
     chars = [g[0] for g in model.c.count[1] if g[0] not in (BOS, "</s>")]
     return sorted(chars)
 
@@ -16,7 +16,7 @@ def sample(model, seed: str, n_chars: int = 100, order: int = 3,
     rng = rng or random.Random(0)
     chars = alphabet(model)
     if not chars:
-        raise ValueError("model has an empty vocabulary")
+        raise ValueError("模型的词表为空")
 
     hist = list(seed)
     out = list(seed)

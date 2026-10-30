@@ -1,7 +1,7 @@
-"""Skip-gram with negative sampling, written with numpy only.
+"""skip-gram 与负采样，纯 numpy 实现。
 
-This mirrors what word2vec does internally: subsample frequent tokens, take
-window pairs, push the true context up and a few sampled contexts down.
+和 word2vec 内部做的事一样：先按频次下采样，取窗口内的词对，把真实上下文
+的概率往上推，再把几个随机采到的上下文往下压。
 """
 
 import time
@@ -35,6 +35,7 @@ class SkipGram:
         self.index = {w: i for i, w in enumerate(self.vocab)}
         self.freq = np.array([freq[w] for w in self.vocab], dtype=np.float64)
 
+        # 只保留词表内的字符，转成 id 序列
         self.corpus = []
         for sent in sentences:
             ids = [self.index[c] for c in sent if c in self.index]
@@ -45,14 +46,16 @@ class SkipGram:
         self.w_in = (self.rng.random((n, dim)) - 0.5) / dim
         self.w_out = np.zeros((n, dim))
 
+        # 负采样分布：词频的 0.75 次方后归一化
         total = self.freq.sum()
         p = self.freq ** 0.75
         self.neg_dist = p / p.sum()
 
+        # 高频词下采样概率，越常见的字越容易被丢掉
         rel = self.freq / total
         self.keep_prob = np.minimum(1.0, (np.sqrt(rel / subsample) + 1) * subsample / rel)
 
-    # -- training -------------------------------------------------------
+    # -- 训练 -----------------------------------------------------------
 
     @staticmethod
     def _sigmoid(x):
@@ -75,10 +78,12 @@ class SkipGram:
                         ctx = sent[j]
                         v = self.w_in[center]
                         u = self.w_out[ctx]
+                        # 正样本：把真实上下文的打分往上推
                         grad = (1.0 - self._sigmoid(float(v @ u))) * self.lr
                         g = grad * u
                         self.w_out[ctx] += grad * v
 
+                        # 负样本：把随机采到的上下文往下压
                         for neg in rng.choice(n_vocab, size=self.negatives, p=self.neg_dist):
                             if neg == ctx:
                                 continue
@@ -88,11 +93,11 @@ class SkipGram:
                             g = g + gn * u
                         self.w_in[center] += g
             if verbose:
-                print(f"  epoch {epoch + 1}/{self.epochs} "
+                print(f"  第 {epoch + 1}/{self.epochs} 轮 "
                       f"{time.perf_counter() - start:.1f}s", flush=True)
         return time.perf_counter() - start
 
-    # -- inspection -----------------------------------------------------
+    # -- 查看 -----------------------------------------------------------
 
     def vector(self, word):
         return self.w_in[self.index[word]] if word in self.index else None
@@ -113,6 +118,7 @@ class SkipGram:
         return out
 
     def analogy(self, a, b, c, topn=5):
+        """类比：a 之于 b，相当于 c 之于谁（字符级语料上通常不好看）。"""
         va, vb, vc = self.vector(a), self.vector(b), self.vector(c)
         if va is None or vb is None or vc is None:
             return []

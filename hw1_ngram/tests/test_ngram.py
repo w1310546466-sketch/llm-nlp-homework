@@ -1,4 +1,4 @@
-"""Unit tests. Run with: python -m unittest discover -s tests -v"""
+"""单元测试。运行：python -m unittest discover -s tests -v"""
 
 import math
 import random
@@ -16,7 +16,7 @@ class TestCounts(unittest.TestCase):
     def test_bigram_counts_include_boundaries(self):
         c = Counts(2)
         c.add("甲乙")
-        seq_len = 1 + 2 + 1  # one BOS pad, two chars, one EOS
+        seq_len = 1 + 2 + 1  # 一个 BOS 填充 + 两个字 + 一个 EOS
         self.assertEqual(c.ctx_total[1][()], seq_len)
         self.assertEqual(c.count[2][(BOS, "甲")], 1)
         self.assertEqual(c.count[2][("甲", "乙")], 1)
@@ -59,17 +59,17 @@ class TestEstimators(unittest.TestCase):
     def test_kneser_ney_unigram_normalised(self):
         counts = build(TOY, 2)
         m = KneserNey(counts)
-        # Normalisation holds over the whole vocabulary, EOS included.
+        # 归一化是对整个词表成立的，包含 EOS。
         words = [g[0] for g in counts.count[1] if g[0] != BOS]
         total = sum(m.prob((), w) for w in words)
         self.assertLess(abs(total - 1.0), 1e-6)
 
     def test_kneser_ney_prefers_combinable_word(self):
-        # "乙" appears after two different characters, "丙" only after "甲".
+        # "乙" 前面出现过两种不同的字，"丁" 只跟在 "甲" 后面。
         counts = build(["甲乙", "丙乙", "甲丁"], 2)
         m = KneserNey(counts)
-        # Conditioning on an unseen context forces a backoff to the unigram
-        # distribution, where the more combinable word should win.
+        # 给一个没见过的上下文，会回退到一元分布，
+        # 这时组合自由度更高的字应当胜出。
         self.assertGreater(m.prob(("辛",), "乙"), m.prob(("辛",), "丁"))
 
 

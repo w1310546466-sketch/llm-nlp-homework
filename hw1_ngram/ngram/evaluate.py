@@ -1,4 +1,4 @@
-"""Perplexity and coverage statistics."""
+"""困惑度与覆盖率统计。"""
 
 import math
 
@@ -21,7 +21,7 @@ def perplexity(model, sentences, order: int) -> float:
 
 
 def unseen_ratio(counts, sentences, order: int) -> float:
-    """Fraction of test n-grams that never occur in the training counts."""
+    """测试集中未在训练计数里出现过的 n-gram 比例。"""
     pad_n = order - 1
     total = seen = 0
     for sent in sentences:

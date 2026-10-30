@@ -1,4 +1,4 @@
-"""Command line entry point.
+"""命令行入口。
 
     python -m ngram build --raw data/raw/*.txt --out data/corpus.txt
     python -m ngram train --corpus data/corpus.txt --orders 1 2 3 4 5
@@ -28,7 +28,7 @@ def split(sentences, test_ratio=0.1, seed=42):
 def cmd_build(args):
     raws = args.raw or sorted(glob.glob("data/raw/*.txt"))
     if not raws:
-        raise SystemExit("no raw files; pass --raw or drop files into data/raw/")
+        raise SystemExit("没有原始文件；用 --raw 指定，或把文件放进 data/raw/")
     stats = corpus_mod.build_corpus(raws, Path(args.out))
     stats["sources"] = [Path(p).name for p in raws]
     print(json.dumps(stats, ensure_ascii=False, indent=2))
@@ -38,8 +38,7 @@ def cmd_train(args):
     sentences = corpus_mod.load(Path(args.corpus))
     train, test = split(sentences)
     vocab = len({ch for s in train for ch in s})
-    print(f"train {len(train)} sents / test {len(test)} sents, vocab {vocab}",
-          flush=True)
+    print(f"训练 {len(train)} 句 / 测试 {len(test)} 句，字符表 {vocab}", flush=True)
 
     rows = []
     for order in args.orders:
@@ -56,7 +55,7 @@ def cmd_train(args):
             "perplexity": {},
         }
 
-        # Kneser-Ney needs continuation counts, which only exist from order 2 up.
+        # Kneser-Ney 需要续接计数，一元时没有定义，所以只在二阶以上加入。
         models = [MLE(counts), AddK(counts, 1.0, vocab), AddK(counts, 0.01, vocab),
                   StupidBackoff(counts)]
         if order >= 2:
@@ -71,7 +70,7 @@ def cmd_train(args):
         rows.append(row)
         print(json.dumps(row, ensure_ascii=False), flush=True)
 
-    # Samples from the best-performing configuration on this corpus.
+    # 用本语料上表现最好的配置各生成三条，方便横向比较。
     counts3 = build(train, 3)
     counts5 = build(train, 5)
     gens = {
@@ -101,7 +100,7 @@ def cmd_train(args):
     (out / "ngram_results.json").write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print("\nsamples")
+    print("\n生成样例")
     for key, values in gens.items():
         if key == "seed":
             continue
@@ -114,12 +113,12 @@ def main(argv=None):
     p = argparse.ArgumentParser(prog="ngram")
     sub = p.add_subparsers(required=True)
 
-    b = sub.add_parser("build", help="clean raw text into a corpus")
+    b = sub.add_parser("build", help="把原始文本清洗成语料")
     b.add_argument("--raw", nargs="*")
     b.add_argument("--out", default="data/corpus.txt")
     b.set_defaults(func=cmd_build)
 
-    t = sub.add_parser("train", help="fit models and report perplexity")
+    t = sub.add_parser("train", help="训练模型并输出困惑度")
     t.add_argument("--corpus", default="data/corpus.txt")
     t.add_argument("--orders", nargs="*", type=int, default=[1, 2, 3, 4, 5])
     t.add_argument("--out", default="results")

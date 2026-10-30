@@ -1,13 +1,10 @@
-"""Build a topic-labelled headline set from the People's Daily 1998 release.
+"""从人民日报 1998 语料构造带主题标签的标题集。
 
-The corpus has no topic labels, and the assignment says "自选标签", so the
-labels have to be defined somewhere. Here each article's first line (its
-headline) is assigned to the topic with the most keyword hits; headlines with no
-hit or an exact tie are dropped. The keyword lists are short on purpose so they
-are easy to argue with and easy to change.
+语料本身没有主题标注，而作业要求"自选标签"，所以标签必须自己定义。这里取
+每篇文章的第一行当标题，按关键词命中数归到得分最高的主题；一条都没命中、
+或者两类打平的，直接丢掉。关键词表刻意写得很短，方便质疑，也方便改。
 
-Article grouping uses the id prefix `YYYYMMDD-版-文章`, so the sentences of one
-article stay together.
+文章按编号前缀 `YYYYMMDD-版-文章` 分组，同一篇的句子不会被打散。
 
     python scripts/parse_peopledaily.py --src data/raw/*.txt --out data/labeled.tsv
 """
@@ -43,11 +40,10 @@ def read_text(path: Path) -> str:
             return data.decode(enc)
         except UnicodeDecodeError:
             continue
-    # One of the monthly files has a handful of undecodable bytes around
-    # offset 4.2M; replacing them costs a few characters out of two million.
+    # 某个文件的 4.2M 偏移处有几处坏字节，两百多万字里替换掉几个不影响结论。
     text = data.decode("gb18030", errors="replace")
     bad = text.count("\ufffd")
-    print(f"  note: {path.name} decoded with {bad} replacement chars")
+    print(f"  注意：{path.name} 有 {bad} 个替换字符")
     return text
 
 
@@ -57,7 +53,7 @@ def clean(line: str) -> str:
 
 
 def iter_articles(paths):
-    """Yield (headline, body_text) with sentences of one article grouped."""
+    """逐篇产出 (标题, 正文)，同一篇文章的句子聚在一起。"""
     for path in paths:
         current_key, headline, body = None, "", []
         for raw in read_text(Path(path)).splitlines():
@@ -91,7 +87,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", nargs="*", default=None)
     ap.add_argument("--out", default="data/labeled.tsv")
-    ap.add_argument("--body-out", default="", help="optional plain text for embeddings")
+    ap.add_argument("--body-out", default="", help="可选：另存一份正文供训练词向量")
     ap.add_argument("--per-label", type=int, default=700)
     ap.add_argument("--max-body-chars", type=int, default=400_000)
     ap.add_argument("--seed", type=int, default=0)
@@ -125,13 +121,13 @@ def main():
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text("\n".join(rows), encoding="utf-8")
 
-    print(f"headlines kept {len(rows)}")
-    print("per label:", {k: min(len(v), args.per_label) for k, v in buckets.items()})
-    print("available:", {k: len(v) for k, v in buckets.items()})
+    print(f"保留标题 {len(rows)} 条")
+    print("每类实际条数：", {k: min(len(v), args.per_label) for k, v in buckets.items()})
+    print("各类可用条数：", {k: len(v) for k, v in buckets.items()})
 
     if args.body_out:
         Path(args.body_out).write_text("\n".join(body_lines), encoding="utf-8")
-        print(f"body text {len(body_lines)} paragraphs / {body_chars} chars -> {args.body_out}")
+        print(f"正文 {len(body_lines)} 段 / {body_chars} 字 -> {args.body_out}")
 
 
 if __name__ == "__main__":

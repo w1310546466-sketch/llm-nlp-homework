@@ -1,4 +1,4 @@
-"""Dataset helpers for the vector/classifier experiments."""
+"""词向量与分类实验的数据集工具。"""
 
 import random
 import re
@@ -15,7 +15,7 @@ def clean_text(text: str) -> str:
 
 
 def load_tsv(path: Path):
-    """Read `label<TAB>text` lines. Blank or malformed lines are skipped."""
+    """读取 `标签<TAB>文本` 格式，空行和格式不对的行直接跳过。"""
     rows = []
     with open(path, encoding="utf-8") as f:
         for line in f:

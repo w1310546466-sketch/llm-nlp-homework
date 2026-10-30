@@ -1,4 +1,4 @@
-"""Tests for the vector/classifier code."""
+"""词向量与分类器的单元测试。"""
 
 import math
 import unittest
@@ -63,7 +63,7 @@ class TestClassifier(unittest.TestCase):
         self.assertLess(abs(p.sum() - 1.0), 1e-9)
 
     def test_learns_separable_data(self):
-        # Two well separated clusters in 2-D should be learned easily.
+        # 二维平面上两个分得很开的簇，线性分类器应该很容易学到。
         X, y = [], []
         for i in range(40):
             X.append(np.array([1.0, 0.0]) + np.random.default_rng(i).normal(0, 0.05, 2))

@@ -1,8 +1,7 @@
-"""n-gram counts and smoothing estimators.
+"""n-gram 计数与各平滑估计器。
 
-Everything is character level here, because that needs no segmenter and works
-on any Chinese text. Swapping to word level is a one-line change in the caller
-(pass tokens instead of characters).
+这里全部是字符级，因为字符级不需要分词器，对任何中文文本都能直接跑。
+换成词级只需要改调用方一行：把字符列表换成词列表。
 """
 
 import math
@@ -13,11 +12,11 @@ EOS = "</s>"
 
 
 class Counts:
-    """Raw n-gram counts for orders 1..N, plus per-context totals."""
+    """保存 1..N 阶的原始 n-gram 计数，以及每个上下文的总次数。"""
 
     def __init__(self, order: int):
         if order < 1:
-            raise ValueError("order must be >= 1")
+            raise ValueError("阶数必须大于等于 1")
         self.order = order
         self.count = [None] + [defaultdict(int) for _ in range(order)]
         self.ctx_total = [None] + [defaultdict(int) for _ in range(order)]
@@ -32,7 +31,7 @@ class Counts:
                 ck[gram] += 1
                 if k >= 2:
                     ctot[gram[:-1]] += 1
-        # Unigram denominator is the token count, stored under the empty context.
+        # 一元的分母就是 token 总数，统一记在空上下文下。
         self.ctx_total[1][()] += len(seq)
 
     @property
@@ -51,7 +50,7 @@ def build(sentences, order: int) -> Counts:
 
 
 class MLE:
-    """Maximum likelihood. Assigns zero to anything unseen, so perplexity dies."""
+    """最大似然估计。未登录的 n-gram 概率为 0，困惑度会直接崩掉。"""
 
     name = "mle"
 
@@ -66,7 +65,7 @@ class MLE:
 
 
 class AddK:
-    """Additive smoothing. k=1 is Laplace."""
+    """加 k 平滑，k = 1 即 Laplace。"""
 
     def __init__(self, counts: Counts, k: float = 1.0, vocab_size: int | None = None):
         self.c = counts
@@ -82,7 +81,7 @@ class AddK:
 
 
 class StupidBackoff:
-    """Unaltered counts with a fixed backoff penalty. Never normalised."""
+    """计数不打折，回退时乘一个固定惩罚。不保证归一化。"""
 
     name = "stupid-backoff"
 
@@ -103,11 +102,10 @@ class StupidBackoff:
 
 
 class KneserNey:
-    """Interpolated Kneser-Ney with a single discount.
+    """插值 Kneser-Ney，使用单一折扣。
 
-    Lower orders use continuation counts (how many distinct words precede this
-    one), not raw frequency. That is what keeps the backoff distribution about
-    combinability rather than popularity.
+    低阶不用原始频次，而用续接计数——这个字前面出现过多少种不同的字。
+    这样回退分布衡量的是"能组合进多少种上下文"，而不是"多常见"。
     """
 
     name = "kneser-ney"
@@ -116,11 +114,13 @@ class KneserNey:
         self.c = counts
         self.D = discount
         self.order = counts.order
+        # 续接计数：只统计"作为后继出现过"，供低阶回退使用
         self._cont = [None] + [defaultdict(int) for _ in range(self.order + 1)]
         for k in range(2, self.order + 1):
             for gram in self.c.count[k]:
                 self._cont[k - 1][gram[1:]] += 1
 
+        # 每个上下文下出现过多少种不同的后继，用于算插值权重
         self._types = [None] + [defaultdict(int) for _ in range(self.order + 1)]
         for k in range(1, self.order + 1):
             for gram in self.c.count[k]:
@@ -130,6 +130,7 @@ class KneserNey:
 
     def _unigram(self, word) -> float:
         if self.order == 1:
+            # 一元没有续接计数可用，退化为最大似然
             num = self.c.count[1].get((word,), 0)
             den = self.c.unigram_total()
             return num / den if den else 1e-10
@@ -148,6 +149,7 @@ class KneserNey:
         c_hw = self.c.count[k].get(ctx + (word,), 0)
         c_h = self.c.ctx_total[k].get(ctx, 0)
         if c_h == 0:
+            # 上下文本身没见过，直接退到更短的上下文
             return self.prob(ctx[1:], word)
         lower = self.prob(ctx[1:], word)
         lam = self.D * self._types[k].get(ctx, 0) / c_h
