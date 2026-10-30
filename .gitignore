@@ -1,6 +1,19 @@
-﻿# Data and outputs that are regenerated
+﻿# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Data and outputs that are regenerated
 data/raw/
 hw1_ngram/data/corpus*.txt
 hw2_veccls/data/body.txt
 *.npy
 *.txt.tmp
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
