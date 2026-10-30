@@ -1,0 +1,118 @@
+{
+  "corpus": {
+    "file": "data\\corpus.txt",
+    "train_sentences": 42360,
+    "test_sentences": 4706,
+    "train_chars": 1800971,
+    "test_chars": 199054,
+    "vocab": 4614
+  },
+  "results": [
+    {
+      "order": 1,
+      "entries": 4615,
+      "build_seconds": 0.39,
+      "unseen_ratio": 0.0003,
+      "perplexity": {
+        "mle": null,
+        "mle_seconds": 0.0,
+        "laplace": 661.66,
+        "laplace_seconds": 0.111,
+        "add-0.01": 662.55,
+        "add-0.01_seconds": 0.115,
+        "stupid-backoff": 663.39,
+        "stupid-backoff_seconds": 0.155
+      }
+    },
+    {
+      "order": 2,
+      "entries": 282774,
+      "build_seconds": 1.304,
+      "unseen_ratio": 0.0817,
+      "perplexity": {
+        "mle": null,
+        "mle_seconds": 0.0,
+        "laplace": 221.52,
+        "laplace_seconds": 0.155,
+        "add-0.01": 107.62,
+        "add-0.01_seconds": 0.163,
+        "stupid-backoff": 83.37,
+        "stupid-backoff_seconds": 0.223,
+        "kneser-ney": 92.7,
+        "kneser-ney_seconds": 0.287
+      }
+    },
+    {
+      "order": 3,
+      "entries": 1146154,
+      "build_seconds": 3.003,
+      "unseen_ratio": 0.3564,
+      "perplexity": {
+        "mle": null,
+        "mle_seconds": 0.0,
+        "laplace": 1004.35,
+        "laplace_seconds": 0.214,
+        "add-0.01": 173.64,
+        "add-0.01_seconds": 0.215,
+        "stupid-backoff": 48.05,
+        "stupid-backoff_seconds": 0.279,
+        "kneser-ney": 52.61,
+        "kneser-ney_seconds": 0.542
+      }
+    },
+    {
+      "order": 4,
+      "entries": 2439933,
+      "build_seconds": 4.685,
+      "unseen_ratio": 0.6099,
+      "perplexity": {
+        "mle": null,
+        "mle_seconds": 0.0,
+        "laplace": 2193.57,
+        "laplace_seconds": 0.22,
+        "add-0.01": 586.14,
+        "add-0.01_seconds": 0.233,
+        "stupid-backoff": 67.3,
+        "stupid-backoff_seconds": 0.352,
+        "kneser-ney": 49.58,
+        "kneser-ney_seconds": 0.807
+      }
+    },
+    {
+      "order": 5,
+      "entries": 3945268,
+      "build_seconds": 6.735,
+      "unseen_ratio": 0.7524,
+      "perplexity": {
+        "mle": null,
+        "mle_seconds": 0.0,
+        "laplace": 2964.98,
+        "laplace_seconds": 0.235,
+        "add-0.01": 1282.44,
+        "add-0.01_seconds": 0.208,
+        "stupid-backoff": 128.25,
+        "stupid-backoff_seconds": 0.426,
+        "kneser-ney": 50.75,
+        "kneser-ney_seconds": 1.01
+      }
+    }
+  ],
+  "generations": {
+    "seed": "在阳光明媚的五月",
+    "kn3": [
+      "在阳光明媚的五月的社会主义市场去年月，大厅里马科夫，等等。第十八日在工作，都是腰包括德、环境，摆。排防守好这个文明，真正使后次，于是，年经济部长理事务助理吉佩定在本地人的财经纪求，并在欧洲等纷至沓来往是本，这样一定的",
+      "在阳光明媚的五月份，深入实际的良好。许多活”和乡村，认为两国间的共同主办的国家吸收外地。设有中国，而且大河南财经管理办法，腹泻攻不下，在今天的派别斗争达到亿多么不是，我们党将霜雨雪，北京队的席位曾长、省科技百强县的定",
+      "在阳光明媚的五月，通常关键是被动摇，引发工作者，那就是元。》封建社团日电记者戚德良，有些部门统计，现在，选准确的批着我的心血和编辑李瑞环境宣传思想不该办的事，最突出表现他们明，扛办的点，供电、用年左右。新设备制造商的"
+    ],
+    "sb3": [
+      "在阳光明媚的五月端的建立外交部发言人阿地力雄厚爽的问题，又精神经济份合作，采取精神，把“的实际的“想问候和良好的发言流传下拨救灾前线话剧艺术骨干脆就老年对军区前线话剧《虎踞钟市资金流动的可能立永久，新建的，较快人民族",
+      "在阳光明媚的五月两岸直接投资的股价下跌深感“卖粮难，诸们一方面显得必全国妇联副主任廖晖、王昕（女，蒙古巴格达，多用的回报，要放弃。前遇到什么程度减少对经济增长、中宣部相开工奠进行技术公司，所又脚踏进。群措联系，应当妨",
+      "在阳光明媚的五月，邵华卿辞行拜会并讲话《小老鼠，而年月底不仅小许和鼓舞和促余勃兆妥，正在这里纳说：好地面高度重视她是强调组织大规模最大限度地减少种族隔离退休闲的渔民的时候审理，效力逐步趋于网上生很大进军州股份制订单的"
+    ],
+    "kn5": [
+      "在阳光明媚的五月的风”在山东青岛市委市政府统一公布，自年月日起，北京市开展送温暖活动进一步得到的“桑积极好运。来到雷航班亮四川长江上游河道。飚、姬鹏飞、黄华、竹子，或拆迁建筑物及其他有害化学物质污费用户的，要积极推进",
+      "在阳光明媚的五月》的赞自律意识，两个要大家”兼容变，设专业户，唱出了“中国湿地保护主义……亡羊补贴，为全校推进和平进程的结果。歌。取消或减轻对工厂干部职工心系灾区，都有必要担，而且还大造船厂把彻我贸、科技等领域的合作",
+      "在阳光明媚的五月，辆。事起游戏团的组织优势和新鲜蔬菜。员、上海市委副书记、中央军委，向各民主党派和工商联负责人和无党派爱国人士，有信心，成为京剧迈向新世纪的门槛帕巴荣后年修订货币供应量达万多亩，全县石材总量占全省商业"
+    ]
+  }
+}
