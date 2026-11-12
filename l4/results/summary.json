@@ -1,0 +1,30 @@
+{
+  "protocols": {
+    "A": {
+      "coverage": 1.0,
+      "avg_selection_loss": 0.0,
+      "avg_f1": 0.721,
+      "avg_calls": 1.0
+    },
+    "B": {
+      "coverage": 0.833,
+      "avg_selection_loss": 0.0,
+      "avg_f1": 0.682,
+      "avg_calls": 2.0
+    },
+    "C": {
+      "coverage": 1.0,
+      "avg_selection_loss": 0.032,
+      "avg_f1": 0.698,
+      "avg_calls": 4.0
+    },
+    "D": {
+      "coverage": 1.0,
+      "avg_selection_loss": 0.044,
+      "avg_f1": 0.711,
+      "avg_calls": 4.0
+    }
+  },
+  "detect_rate": 0.042,
+  "seconds": 387.5
+}

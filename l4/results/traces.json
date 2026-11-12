@@ -1,0 +1,2022 @@
+{
+  "translate": [
+    {
+      "protocol": "A",
+      "id": 0,
+      "chars": 175,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.752,
+      "calls": 1,
+      "picked": null,
+      "chosen": "表B.1中列出的属性是根据ISO 12620-1定义的参考所使用的TEI指南（参见参考[31]）提供的。",
+      "candidates": [
+        "表B.1中列出的属性是根据ISO 12620-1定义的参考所使用的TEI指南（参见参考[31]）提供的。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 1,
+      "chars": 299,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.793,
+      "calls": 1,
+      "picked": null,
+      "chosen": "也就是说，对话行为结构的解释就是对其交际功能的理解，应用于对它的发送者、接收者和维度的解读。附录A提供了关于DiAML语义的更多信息；完整的规格可以在参考文献[19]中找到。",
+      "candidates": [
+        "也就是说，对话行为结构的解释就是对其交际功能的理解，应用于对它的发送者、接收者和维度的解读。附录A提供了关于DiAML语义的更多信息；完整的规格可以在参考文献[19]中找到。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 2,
+      "chars": 194,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.763,
+      "calls": 1,
+      "picked": null,
+      "chosen": "在语源学或语源词中引用文献时，可以使用<Bibl>元素。如果参考文献指向外部来源，则可以使用CrossREF元素中的<Xref>来引用。",
+      "candidates": [
+        "在语源学或语源词中引用文献时，可以使用<Bibl>元素。如果参考文献指向外部来源，则可以使用CrossREF元素中的<Xref>来引用。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 3,
+      "chars": 240,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.683,
+      "calls": 1,
+      "picked": null,
+      "chosen": "注释1：通常，一个人在其语言库中会使用多种语言风格，并可以根据他们对不同目的或领域的感知来调整语言风格（3.2.1）。",
+      "candidates": [
+        "注释1：通常，一个人在其语言库中会使用多种语言风格，并可以根据他们对不同目的或领域的感知来调整语言风格（3.2.1）。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 4,
+      "chars": 253,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.758,
+      "calls": 1,
+      "picked": null,
+      "chosen": "为了获得最佳效果，请不要添加任何添加剂。应使用纯度为98%或以上的高质量气体。不应使用重油或轻油。也不应使用生物燃料。此外，还应避免使用催化剂。",
+      "candidates": [
+        "为了获得最佳效果，请不要添加任何添加剂。应使用纯度为98%或以上的高质量气体。不应使用重油或轻油。也不应使用生物燃料。此外，还应避免使用催化剂。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 5,
+      "chars": 210,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.735,
+      "calls": 1,
+      "picked": null,
+      "chosen": "表 17 — 文本表示类（TextRepresentation）\n\n\n表格：\n- LMF 类\n- LBX 构造\n\n\n第一行：\n- /TextRepresentation/\n- （无）\n- （有）\n- （有，）",
+      "candidates": [
+        "表 17 — 文本表示类（TextRepresentation）\n\n\n表格：\n- LMF 类\n- LBX 构造\n\n\n第一行：\n- /TextRepresentation/\n- （无）\n- （有）\n- （有，）"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 6,
+      "chars": 275,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.728,
+      "calls": 1,
+      "picked": null,
+      "chosen": "一个动词在子类别框架（3.2）交替中可以有不同的句法行为类型，例如主动语态、被动语态、反身等。注释1：句法行为是通过子类别框架来描述的。$^{[9][12]}$",
+      "candidates": [
+        "一个动词在子类别框架（3.2）交替中可以有不同的句法行为类型，例如主动语态、被动语态、反身等。注释1：句法行为是通过子类别框架来描述的。$^{[9][12]}$"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 7,
+      "chars": 224,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.846,
+      "calls": 1,
+      "picked": null,
+      "chosen": "ISO 24610-1:2006 提供了多种表示歧义的方法，例如在特征值级别上。这些机制可用于处理出现在词形内容中的歧义。",
+      "candidates": [
+        "ISO 24610-1:2006 提供了多种表示歧义的方法，例如在特征值级别上。这些机制可用于处理出现在词形内容中的歧义。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 8,
+      "chars": 259,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.598,
+      "calls": 1,
+      "picked": null,
+      "chosen": "术语提取，超越了简单的术语提取，是由包括语言专业人员在内的多个专家进行的，这些专家还包括专门从事术语工作的术语学家以及信息和数据科学家。",
+      "candidates": [
+        "术语提取，超越了简单的术语提取，是由包括语言专业人员在内的多个专家进行的，这些专家还包括专门从事术语工作的术语学家以及信息和数据科学家。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 9,
+      "chars": 274,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.811,
+      "calls": 1,
+      "picked": null,
+      "chosen": "@corresp 属性确保了 `<listAnnotation>` 元素和正在注释的内容之间的明确对应关系，而 @target 属性则编码了 `<span>` 元素与其代表的给定词形之间的关系。",
+      "candidates": [
+        "@corresp 属性确保了 `<listAnnotation>` 元素和正在注释的内容之间的明确对应关系，而 @target 属性则编码了 `<span>` 元素与其代表的给定词形之间的关系。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 10,
+      "chars": 205,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.66,
+      "calls": 1,
+      "picked": null,
+      "chosen": "非连续的令牌也可以与单个词形关联起来，例如处理某些材料插入到词形中的情况，如图17所示。",
+      "candidates": [
+        "非连续的令牌也可以与单个词形关联起来，例如处理某些材料插入到词形中的情况，如图17所示。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 11,
+      "chars": 243,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.6,
+      "calls": 1,
+      "picked": null,
+      "chosen": "当粒度粗放时，字符序列auquel不进行分解，并且对应于单个标记符，但与此单个标记符相关的词形有两个不同的形式。这在图13中表示。",
+      "candidates": [
+        "当粒度粗放时，字符序列auquel不进行分解，并且对应于单个标记符，但与此单个标记符相关的词形有两个不同的形式。这在图13中表示。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 12,
+      "chars": 178,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.756,
+      "calls": 1,
+      "picked": null,
+      "chosen": "对本文件的任何反馈或问题，请直接发送给用户的国家标准化组织。这些机构的完整列表可以在www.iso.org/members.html找到。",
+      "candidates": [
+        "对本文件的任何反馈或问题，请直接发送给用户的国家标准化组织。这些机构的完整列表可以在www.iso.org/members.html找到。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 13,
+      "chars": 219,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.645,
+      "calls": 1,
+      "picked": null,
+      "chosen": "有时，不依赖于这种隐含的关系而使用明确标识的数据类别可能更有用，以便区分它与其他形态语法数据类别，如性别、时态等。",
+      "candidates": [
+        "有时，不依赖于这种隐含的关系而使用明确标识的数据类别可能更有用，以便区分它与其他形态语法数据类别，如性别、时态等。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 14,
+      "chars": 233,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.727,
+      "calls": 1,
+      "picked": null,
+      "chosen": "一种词义学的观点认为，词汇意义可以与概念相关联，并且特别指出，一个单词的不同含义通常与其语法对象相关的不同语义类别有关。",
+      "candidates": [
+        "一种词义学的观点认为，词汇意义可以与概念相关联，并且特别指出，一个单词的不同含义通常与其语法对象相关的不同语义类别有关。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 15,
+      "chars": 294,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.589,
+      "calls": 1,
+      "picked": null,
+      "chosen": "否：这些安全措施是进行燃料罐工作所必需的最低限度的安全措施。当地的法规可能还需要其他的安全措施。是：这些安全措施是进行燃料罐工作所必需的最低限度的安全措施。但当地的法规可能还需要其他的安全措施。",
+      "candidates": [
+        "否：这些安全措施是进行燃料罐工作所必需的最低限度的安全措施。当地的法规可能还需要其他的安全措施。是：这些安全措施是进行燃料罐工作所必需的最低限度的安全措施。但当地的法规可能还需要其他的安全措施。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 16,
+      "chars": 316,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.673,
+      "calls": 1,
+      "picked": null,
+      "chosen": "### 3.5\n\n**词形**\n\n固定了形态语法特征值（见3.12）的词汇形式的抽象实例，在句法上下文中\n\n注释1：词形可以没有声学或图形实现，或者对应于一个或多个标记（见3.21），不一定形成连续序列。",
+      "candidates": [
+        "### 3.5\n\n**词形**\n\n固定了形态语法特征值（见3.12）的词汇形式的抽象实例，在句法上下文中\n\n注释1：词形可以没有声学或图形实现，或者对应于一个或多个标记（见3.21），不一定形成连续序列。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 17,
+      "chars": 198,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.71,
+      "calls": 1,
+      "picked": null,
+      "chosen": "此外，MAF定义了<span>元素需要一个@type属性，该属性可以本地化或在嵌套的<spanGrp>或<annotationBlock>中通过，当存在嵌套表示时，请参见表3。",
+      "candidates": [
+        "此外，MAF定义了<span>元素需要一个@type属性，该属性可以本地化或在嵌套的<spanGrp>或<annotationBlock>中通过，当存在嵌套表示时，请参见表3。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 18,
+      "chars": 240,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.568,
+      "calls": 1,
+      "picked": null,
+      "chosen": "句法描述是可选的，因此可以不进行句法描述而仅通过形态学、语法和语义来描述词汇实例（LexicalEntry）、行为（SyntacticBehaviour）和意义（Sense）。这些实例构成了一个三角形，代表形态学、语法和语义。",
+      "candidates": [
+        "句法描述是可选的，因此可以不进行句法描述而仅通过形态学、语法和语义来描述词汇实例（LexicalEntry）、行为（SyntacticBehaviour）和意义（Sense）。这些实例构成了一个三角形，代表形态学、语法和语义。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 19,
+      "chars": 249,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.69,
+      "calls": 1,
+      "picked": null,
+      "chosen": "本文件将有助于进一步提高商业报告的整体清晰度，通过建立一致的设计要求（标准化的表示方法）来规定数据可视化元素（如图表和表格），以及添加相关意义的文字对象。",
+      "candidates": [
+        "本文件将有助于进一步提高商业报告的整体清晰度，通过建立一致的设计要求（标准化的表示方法）来规定数据可视化元素（如图表和表格），以及添加相关意义的文字对象。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 20,
+      "chars": 271,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.834,
+      "calls": 1,
+      "picked": null,
+      "chosen": "—— 该序列化格式可以转换为与RELAX-NG 模式（RNG、RNC）或由TEI ODD 实现的原则定义的XML Schema（XSD）所定义的模式兼容的格式，并且以此方式说明了它（参见参考文献[24]）。",
+      "candidates": [
+        "—— 该序列化格式可以转换为与RELAX-NG 模式（RNG、RNC）或由TEI ODD 实现的原则定义的XML Schema（XSD）所定义的模式兼容的格式，并且以此方式说明了它（参见参考文献[24]）。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 21,
+      "chars": 219,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.807,
+      "calls": 1,
+      "picked": null,
+      "chosen": "本条款说明如何将形态语法内容附加到词形上，如何定义可重用的形态语法标签集以提供紧凑的标记表示法，并控制这些标签的有效性。",
+      "candidates": [
+        "本条款说明如何将形态语法内容附加到词形上，如何定义可重用的形态语法标签集以提供紧凑的标记表示法，并控制这些标签的有效性。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 22,
+      "chars": 188,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.775,
+      "calls": 1,
+      "picked": null,
+      "chosen": "根据信息质量原则（3.6.5.1），用于使用的信息（3.1.2）应包括所有相关的信息，且所需其他信息最少。",
+      "candidates": [
+        "根据信息质量原则（3.6.5.1），用于使用的信息（3.1.2）应包括所有相关的信息，且所需其他信息最少。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "A",
+      "id": 23,
+      "chars": 242,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.791,
+      "calls": 1,
+      "picked": null,
+      "chosen": "本条款规定了55条BSP规则，这些规则由8个句子长度规则（见第7.2节）、8个段落规则（见第7.3节）、14个构造规则（见第7.4节）、6个修饰规则（见第7.5节）、12个词汇规则（见第7.6节）和7个其他规则（见第7.7节）组成。",
+      "candidates": [
+        "本条款规定了55条BSP规则，这些规则由8个句子长度规则（见第7.2节）、8个段落规则（见第7.3节）、14个构造规则（见第7.4节）、6个修饰规则（见第7.5节）、12个词汇规则（见第7.6节）和7个其他规则（见第7.7节）组成。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 0,
+      "chars": 175,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.796,
+      "calls": 2,
+      "picked": null,
+      "chosen": "表格B.1中列出的属性由TEI指南提供（参见引用[31]），旨在处理根据ISO 12620-1定义的参考项。",
+      "candidates": [
+        "表格B.1中列出的属性由TEI指南提供（参见引用[31]），旨在处理根据ISO 12620-1定义的参考项。"
+      ],
+      "plan": "- **Attributes**: 表格B.1中列出的属性。\n- **TEI Guidelines**: 文档参考[31]中的TEI指南。\n- **ISO 12620-1**: 国际标准组织（ISO）第12620-1号标准。\n- **References**: 引用。\n- **Handling**: 处理。\n- **Definition**: 定义。\n- **Purpose**: 目的。",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 1,
+      "chars": 299,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.769,
+      "calls": 2,
+      "picked": null,
+      "chosen": "例如，对话行为结构的解读是对其交际功能的理解，该功能应用于发送者、接收者以及维度的解读。附件A提供了关于DiAML语义的更多信息；详尽规格见参考文献[19]。",
+      "candidates": [
+        "例如，对话行为结构的解读是对其交际功能的理解，该功能应用于发送者、接收者以及维度的解读。附件A提供了关于DiAML语义的更多信息；详尽规格见参考文献[19]。"
+      ],
+      "plan": "- 关键术语：对话行为结构（dialogue act structure）、语义学（semantics）、参考文献（Reference）。\n- 条款结构：\n  - I.e., 引用前面的句子，解释其含义。\n  - the interpretation of a dialogue act structure 是对对话行为结构的解读。\n  - its communicative function 是它的交际功能。\n  - applied to the interpretations of its sender, its addressee, and its dimension 是将其应用于发送者、",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 2,
+      "chars": 194,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.649,
+      "calls": 2,
+      "picked": null,
+      "chosen": "文献来源可以在语义学或词源学中使用<bibl>元素进行引用。如果参考文献包含指向外部资源的指针，则可以使用<crossref>xref</xref>元素进行交叉引用。",
+      "candidates": [
+        "文献来源可以在语义学或词源学中使用<bibl>元素进行引用。如果参考文献包含指向外部资源的指针，则可以使用<crossref>xref</xref>元素进行交叉引用。"
+      ],
+      "plan": "- **Key Terms**: Bibliographic sources, etymology, etymon, <Bibl>, <Xref>\n- **Terms and Structures**:\n  - `<Bibl>`: Element for citing bibliographic sources in an etymology or etymon.\n  - `<Xref>`: Element for referencing cross-referencing external sources.\n- **Translation Considerations**:\n  - \"Cit",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 3,
+      "chars": 240,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.714,
+      "calls": 2,
+      "picked": null,
+      "chosen": "注释 1：通常，一个人在其语言库中拥有不止一种语言风格，并可以根据对不同目的或领域的适当性感知来调整其语言风格使用（3.2.1）。",
+      "candidates": [
+        "注释 1：通常，一个人在其语言库中拥有不止一种语言风格，并可以根据对不同目的或领域的适当性感知来调整其语言风格使用（3.2.1）。"
+      ],
+      "plan": "- 关键术语：language register, linguistic repertoire, purpose, domain\n\n- 条款结构：\n  - Note 1 to entry: \n    - A person usually has more than one language register in their linguistic repertoire.\n    - They can vary their use of language register according to their perception of what is appropriate for diffe",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 4,
+      "chars": 253,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.75,
+      "calls": 2,
+      "picked": null,
+      "chosen": "否：为了获得最佳效果，请不要在气体中添加任何助剂。您应使用纯度达到98%以上的高质量气体。请勿使用重油或轻油。请勿使用生物燃料。此外，还应避免使用任何催化剂。",
+      "candidates": [
+        "否：为了获得最佳效果，请不要在气体中添加任何助剂。您应使用纯度达到98%以上的高质量气体。请勿使用重油或轻油。请勿使用生物燃料。此外，还应避免使用任何催化剂。"
+      ],
+      "plan": "1. 关键术语：\n   - Additive agents\n   - High quality gas\n   - Purity (of gas)\n   - Heavy oil\n   - Light oil\n   - Biofuels\n   - Catalytic agents\n\n2. 条款结构：\n   - No: 表示否定或禁止\n   - Should: 表示建议或必须\n   - Not: 表示不使用或避免使用\n   - Use: 表示使用\n   - Avoid: 表示避免使用\n\n3. 翻译时容易出错的点：\n   - \"Additive agents\" 可以翻译为“添加剂”或者“助剂”，但需要",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 5,
+      "chars": 210,
+      "coverage": false,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.391,
+      "calls": 2,
+      "picked": null,
+      "chosen": "表 17 — TextRepresentation 类",
+      "candidates": [
+        "表 17 — TextRepresentation 类"
+      ],
+      "plan": "- 关键术语：LMF class, LBX construct, TextRepresentation class\n\n- 要注意的条款结构：\n  - 表格中的每一行代表一个概念或术语。\n  - 第一列是类名或构造名，第二列是描述该类或构造的说明。\n\n- 翻译时容易出错的点：\n  - 注意表格中使用了中文和英文混合的格式，需要准确理解每个部分的意思。\n  - 在翻译时要特别留意括号内的内容，因为它们可能包含特定的含义或者上下文信息。",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 6,
+      "chars": 275,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.627,
+      "calls": 2,
+      "picked": null,
+      "chosen": "示例A中的动词在子类别化框架(3.2)中可以有不同类型的句法行为，例如主动语态、被动语态、反身代词等。注意第1条注释：一个句法行为是通过子类别化框架来描述的。",
+      "candidates": [
+        "示例A中的动词在子类别化框架(3.2)中可以有不同类型的句法行为，例如主动语态、被动语态、反身代词等。注意第1条注释：一个句法行为是通过子类别化框架来描述的。"
+      ],
+      "plan": "- 关键术语：syntactic behaviour（句法行为）、subcategorization frame（子类别化框架）\n- 条款结构：主语+谓语+宾语（SVO）或其变体\n- 翻译时容易出错的点：\n  - \"alternations\" 应译为“交替”而非“变化”\n  - \"entry\" 应译为“条目”而非“入口”\n  - \"subcategorization frames\" 应译为“子类别化框架”而非“子分类框架”",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 7,
+      "chars": 224,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.878,
+      "calls": 2,
+      "picked": null,
+      "chosen": "ISO 24610-1:2006 提供了多种表示歧义的方法，例如在特征值层面。这些机制可用于处理词形中出现的形态语法歧义。",
+      "candidates": [
+        "ISO 24610-1:2006 提供了多种表示歧义的方法，例如在特征值层面。这些机制可用于处理词形中出现的形态语法歧义。"
+      ],
+      "plan": "**关键术语：**\n- ISO 24610-1:2006\n- Ambiguity\n- Feature values\n- Morphosyntactic content\n\n**条款结构：**\n1. **Introduction**\n   - Provides several methods for representing ambiguities.\n   \n2. **Mechanisms**\n   - Mechanisms that can be utilized to address ambiguities in the morphosyntactic part of a word-form.",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 8,
+      "chars": 259,
+      "coverage": false,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.5,
+      "calls": 2,
+      "picked": null,
+      "chosen": "术语提取超越了简单的术语提取，由一系列专家执行，这些专家包括但不限于一般语言专业人员以及特别从事术语工作的术语学家，以及对概念进行建模的语义工程师，以及信息和数据分析领域的专家。",
+      "candidates": [
+        "术语提取超越了简单的术语提取，由一系列专家执行，这些专家包括但不限于一般语言专业人员以及特别从事术语工作的术语学家，以及对概念进行建模的语义工程师，以及信息和数据分析领域的专家。"
+      ],
+      "plan": "- Terminology extraction: 超越简单术语提取的专业领域包括语言专业人士和专门从事术语工作的术语学家。\n  - 关键术语：术语学家（terminologist）\n- Ontology engineering: 对概念进行建模的过程。\n  - 关键术语：概念模型（ontology model）、概念（concept）\n- Information and data science: 研究如何处理信息和数据的技术领域。\n  - 关键术语：信息科学（information science）、数据科学（data science）",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 9,
+      "chars": 274,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.845,
+      "calls": 2,
+      "picked": null,
+      "chosen": "@corresp 属性确保了 <listAnnotation> 元素与正在注释的内容句子之间有明确的对应关系，而 @target 属性则编码了 <span> 元素与代表给定词形的标记符号之间的关系。",
+      "candidates": [
+        "@corresp 属性确保了 <listAnnotation> 元素与正在注释的内容句子之间有明确的对应关系，而 @target 属性则编码了 <span> 元素与代表给定词形的标记符号之间的关系。"
+      ],
+      "plan": "- 关键术语：@corresp, @target, <listAnnotation>, <span>\n- 条款结构：\n  - The @corresp attribute ensures explicit correspondence between the <listAnnotation> element and the sentence whose contents are being annotated.\n  - The @target attribute encodes the relationship between the <span> elements and the token",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 10,
+      "chars": 205,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.705,
+      "calls": 2,
+      "picked": null,
+      "chosen": "序列中的非连续令牌也可以与单个词形相关联，例如，以处理一些材料插入到一个词形的组成部分中的情况，如图17所示。",
+      "candidates": [
+        "序列中的非连续令牌也可以与单个词形相关联，例如，以处理一些材料插入到一个词形的组成部分中的情况，如图17所示。"
+      ],
+      "plan": "- 关键术语：sequence（序列）、non-contiguous tokens（非连续的令牌）、word-form（词形）、material（材料）\n- 条款结构：主句 + 宾语从句\n- 翻译时容易出错的点：\n  - \"can\" 的用法可能导致理解上的混淆。\n  - \"to handle cases where\" 可能会让人误解为处理某些情况。\n  - \"as shown in Figure 17\" 可能会引起读者对图示位置的疑问。",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 11,
+      "chars": 243,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.623,
+      "calls": 2,
+      "picked": null,
+      "chosen": "当优先级放在粗粒度上时，字符序列auquel 不进行分解，并且对应于单个标记，但与此单个标记相关的有两个不同的词形。这在图13中编码。",
+      "candidates": [
+        "当优先级放在粗粒度上时，字符序列auquel 不进行分解，并且对应于单个标记，但与此单个标记相关的有两个不同的词形。这在图13中编码。"
+      ],
+      "plan": "- 关键术语：priority, coarse granularity, character sequence, decomposition, token, word-forms.\n- 条款结构：当优先级放在粗粒度上时，字符序列auquel不分解，并对应于单个标记，但与此单个标记相关的有两个不同的词形。这在图13中编码。\n- 翻译时容易出错的点：\n  - \"coarse granularity\" 应该翻译为“粗粒度”而不是“粗粒度”，因为这是计算机科学中的一个术语。\n  - \"character sequence\" 应该翻译为“字符序列”，而不是“字符序列”，因为这是英语中的标准用法。\n  -",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 12,
+      "chars": 178,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.697,
+      "calls": 2,
+      "picked": null,
+      "chosen": "任何关于本文件的反馈或问题都应发送给用户的国家标准化组织。这些组织的信息可在www.iso.org/members.html中找到。",
+      "candidates": [
+        "任何关于本文件的反馈或问题都应发送给用户的国家标准化组织。这些组织的信息可在www.iso.org/members.html中找到。"
+      ],
+      "plan": "- 关键术语：feedback, questions, ISO, national standards body\n\n- 条款结构：\n1. 反馈或问题应被发送给用户的国家标准组织。\n2. 全部这些组织的信息可以在www.iso.org/members.html找到。\n\n- 翻译时容易出错的点：\n1. \"national\" 应翻译为“国家”而不是“全国”，因为这里的含义是特定的国家机构。\n2. “members” 应翻译为“成员”，而不是“会员”。",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 13,
+      "chars": 219,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.625,
+      "calls": 2,
+      "picked": null,
+      "chosen": "有时，不依赖这种隐含的关系是有用的，而是使用明确标识符来区分那个数据类别，以便与其他形态语法数据类别（如性别、时态等）区分开来。",
+      "candidates": [
+        "有时，不依赖这种隐含的关系是有用的，而是使用明确标识符来区分那个数据类别，以便与其他形态语法数据类别（如性别、时态等）区分开来。"
+      ],
+      "plan": "1. 关键术语：\n   - Implicit relationship\n   - Explicit identifier\n   - Data category\n\n2. 条款结构：\n   该句子包含一个主句和两个从句。\n   主句：It is sometimes useful not to rely on such an implicit relationship.\n   从句1：rather use an explicit identifier for that data category\n   从句2：to distinguish it from other morphosyntactic ",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 14,
+      "chars": 233,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.733,
+      "calls": 2,
+      "picked": null,
+      "chosen": "一种关于词汇语义的观点认为，词义可以与概念相关联，并且特别指出，一个单词的不同意义通常与其语法对象相关的不同语义类别。",
+      "candidates": [
+        "一种关于词汇语义的观点认为，词义可以与概念相关联，并且特别指出，一个单词的不同意义通常与其语法对象相关的不同语义类别。"
+      ],
+      "plan": "1. Lexical Semantics: 关键术语。\n2. Word Senses: 关键术语。\n3. Concepts: 关键术语。\n4. Semantic Classes: 关键术语。\n5. Syntactic Object: 关键术语。\n6. Different Senses: 关键术语。\n7. Syntax: 关键术语。\n8. Translation: 一般术语，但需要关注特定语境下的正确使用和理解。\n9. Contextual Understanding: 需要对上下文有深入的理解才能准确翻译。\n10. Cultural Sensitivity: 翻译过程中需考虑文化差异，确保传达",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 15,
+      "chars": 294,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.656,
+      "calls": 2,
+      "picked": null,
+      "chosen": "否：在燃料罐工作中的安全预防措施仅为必要的最低限度措施。当地法规可能还需要其他的安全预防措施。是：在燃料罐工作中的安全预防措施仅为必要的最低限度措施。但当地法规可能还需要其他的安全预防措施。",
+      "candidates": [
+        "否：在燃料罐工作中的安全预防措施仅为必要的最低限度措施。当地法规可能还需要其他的安全预防措施。是：在燃料罐工作中的安全预防措施仅为必要的最低限度措施。但当地法规可能还需要其他的安全预防措施。"
+      ],
+      "plan": "1. **安全预防措施**：这些是进行燃料罐工作所必需的最低限度的安全预防措施。\n2. **当地法规**：当地的法规可能需要额外的安全预防措施。\n3. **易混淆之处**：\n   - \"Yes\" 和 \"No\" 的含义是否一致。\n   - \"minimum necessary\" 在不同语境下的解释是否相同。\n   - \"local regulations\" 与 \"other safety precautions\" 是否有明确的区分和关系。",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 16,
+      "chars": 316,
+      "coverage": false,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.484,
+      "calls": 2,
+      "picked": null,
+      "chosen": "### 3.5\n\n### 词形\n\n一个lexeme的抽象实例化，其morphosyntactic特征值在syntactic上下文中固定$(3.12)$，以及没有声学或图形实现，或者对应于多个tokens(3.21)，不一定形成连续序列。",
+      "candidates": [
+        "### 3.5\n\n### 词形\n\n一个lexeme的抽象实例化，其morphosyntactic特征值在syntactic上下文中固定$(3.12)$，以及没有声学或图形实现，或者对应于多个tokens(3.21)，不一定形成连续序列。"
+      ],
+      "plan": "- **Key Terms**: \n  - Abstract Instantiation\n  - Lexeme\n  - Morphosyntactic Features\n  - Syntactic Context\n  - Acoustic Realization\n  - Graphic Realization\n  - Token\n\n- **Clause Structure**:\n  - Subject + Verb + Object (SVO)\n  - Main Clause + Subordinate Clause (MC+SC)\n\n- **Translation Tips**:\n  - B",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 17,
+      "chars": 198,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.698,
+      "calls": 2,
+      "picked": null,
+      "chosen": "此外，MAF定义了<span>元素需要一个@type属性，该属性可以在本地或在嵌套的<spanGrp>或<annotationBlock>元素上存在，以处理嵌套表示形式，请参见表3。",
+      "candidates": [
+        "此外，MAF定义了<span>元素需要一个@type属性，该属性可以在本地或在嵌套的<spanGrp>或<annotationBlock>元素上存在，以处理嵌套表示形式，请参见表3。"
+      ],
+      "plan": "- **Key Terms**: \n  - `<span>` element\n  - `@type` attribute\n  - Nested representations\n\n- **Terms and Structures**:\n  - The `<span>` element is defined by MAF (Medical Abstract Format) with an `@type` attribute.\n  - This attribute can be present both locally within the `<span>` element itself or on",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 18,
+      "chars": 240,
+      "coverage": false,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.55,
+      "calls": 2,
+      "picked": null,
+      "chosen": "语法描述是可选的，因此可以不进行语法描述来描述形态学和语义学。LexicalEntry、SyntacticBehaviour和Sense实例形成一个三角形，代表形态学、语法和语义。",
+      "candidates": [
+        "语法描述是可选的，因此可以不进行语法描述来描述形态学和语义学。LexicalEntry、SyntacticBehaviour和Sense实例形成一个三角形，代表形态学、语法和语义。"
+      ],
+      "plan": "- 关键术语：Syntactic description, Morphology, Semantics, LexicalEntry, Syntactic Behaviour, Sense\n- 要点：\n  - Syntactic description is optional.\n  - It's possible to describe morphology and semantics without any syntactic description.\n  - LexicalEntry, SyntacticBehaviour, and Sense instances form a triang",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 19,
+      "chars": 249,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.672,
+      "calls": 2,
+      "picked": null,
+      "chosen": "本文件将进一步提升企业报告的整体清晰度，通过确立一致的设计要求（标准化表示法），包括数据可视化元素（如图表和表格）以及附加意义的文本对象。",
+      "candidates": [
+        "本文件将进一步提升企业报告的整体清晰度，通过确立一致的设计要求（标准化表示法），包括数据可视化元素（如图表和表格）以及附加意义的文本对象。"
+      ],
+      "plan": "- 关键术语：business reporting, consistency, design requirements, standardized notation, data visuals, text objects\n\n- 条款结构：\n  - 引言（Introduction）: 提供背景信息和目的。\n  - 目标（Objectives）: 明确指出通过建立一致的设计要求来提高业务报告的整体清晰度。\n  - 内容（Content）: 描述数据可视化（charts and tables）和文本对象（text objects）的标准表示方法。\n  \n- 翻译时容易出错的点：\n  - \"consi",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 20,
+      "chars": 271,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.76,
+      "calls": 2,
+      "picked": null,
+      "chosen": "— 其序列化格式可以转换为与 RELAX NG 规范（RNG, RNC）或 XML Schema （XSD） 定义的 TEI ODD 相容的格式，该 TEI ODD 实现了本文中定义的原则，并且通过这种方式说明了它（参见参考文献 [24])。",
+      "candidates": [
+        "— 其序列化格式可以转换为与 RELAX NG 规范（RNG, RNC）或 XML Schema （XSD） 定义的 TEI ODD 相容的格式，该 TEI ODD 实现了本文中定义的原则，并且通过这种方式说明了它（参见参考文献 [24])。"
+      ],
+      "plan": "1. 关键术语：\n   - Serialization format\n   - Relax NG schema (RNG, RNC)\n   - XML Schema (XSD)\n   - TEI ODD\n   - Principles\n   - Illustration\n\n2. 条款结构：\n   该句子包含一个主句和两个从句。\n   主句：其序列化格式可以转换为与RELAX NG规范（RNG, RNC）或XML Schema（XSD）定义的TEI ODD相容的格式。\n   从句一：该TEI ODD实施了本文中定义的原则，并且通过这种方式说明了它。\n   从句二：见参考文献[24]。\n\n3. 翻",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 21,
+      "chars": 219,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.709,
+      "calls": 2,
+      "picked": null,
+      "chosen": "这个条款展示了如何将形态语法内容附着到词形上，如何定义可重用的形态语法标签集以便通过标签提供紧凑的表示方法，并如何控制这些标签的有效性。",
+      "candidates": [
+        "这个条款展示了如何将形态语法内容附着到词形上，如何定义可重用的形态语法标签集以便通过标签提供紧凑的表示方法，并如何控制这些标签的有效性。"
+      ],
+      "plan": "- 关键术语：clauses, morphosyntactic content, word-forms, reusable morphosyntactic tagsets, compact notations, tags, validity\n\n- 要注意的条款结构：\n  - 这个条款描述了如何将形态语法内容附着到词形上。\n  - 它还讨论了如何定义可重用的形态语法标签集以提供紧凑的表示方法，并通过标签控制这些标签的有效性。\n\n- 翻译时容易出错的点：\n  - \"attach\" 可能会误译为“连接”或“结合”，但在这里应理解为“附着”。\n  - \"reusable\" 可能会被误解为“可重复使用”",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 22,
+      "chars": 188,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.803,
+      "calls": 2,
+      "picked": null,
+      "chosen": "根据信息质量原则（3.6.5.1），使用信息（3.1.2）应包括所有相关的信息，并且需要其他信息的数量最少以达到完整。",
+      "candidates": [
+        "根据信息质量原则（3.6.5.1），使用信息（3.1.2）应包括所有相关的信息，并且需要其他信息的数量最少以达到完整。"
+      ],
+      "plan": "- **术语**:\n  - Information Quality Principle\n  - Relevant Information\n\n- **条款结构**:\n  1. Information for use (3.1.2)\n     a. Includes all relevant information\n     b. With the least amount of other information needed to be complete\n\n- **易错点**:\n  - \"Information\" vs. \"data\"\n  - \"Relevant\" vs. \"necessary",
+      "checklist": null
+    },
+    {
+      "protocol": "B",
+      "id": 23,
+      "chars": 242,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.733,
+      "calls": 2,
+      "picked": null,
+      "chosen": "本条款列出了55 BSG规则，这些规则由以下部分组成：8个句子长度规则（见第7.2节），8个段落规则（见第7.3节），14个构造规则（见第7.4节），6个修饰规则（见第7.5节），12个词汇规则（见第7.6节）以及7个其他规则（见第7.7节）。",
+      "candidates": [
+        "本条款列出了55 BSG规则，这些规则由以下部分组成：8个句子长度规则（见第7.2节），8个段落规则（见第7.3节），14个构造规则（见第7.4节），6个修饰规则（见第7.5节），12个词汇规则（见第7.6节）以及7个其他规则（见第7.7节）。"
+      ],
+      "plan": "- 关键术语：clause, 55 BSG rules, sentence-length rules, paragraph rules, construction rules, modification rules, vocabulary rules, other rules.\n- 要注意的条款结构：该条款描述了包含多种规则的55 BSG规则集。\n- 翻译时容易出错的点：需要确保对各个规则类型（如句子长度规则、段落规则等）有准确的理解和区分。",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 0,
+      "chars": 175,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.827,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "如表B.1中列出的属性是由TEI指南（参见参考[31]）提供的，用于处理根据ISO 12620-1定义的引用。",
+      "candidates": [
+        "如表B.1中列出的属性是由TEI指南（参见参考[31]）提供的，用于处理根据ISO 12620-1定义的引用。",
+        "表格B.1中列出的属性由TEI指南（参见参考文献[31]）提供，旨在处理根据ISO 12620-1定义的引用。",
+        "表B.1中列出的属性是根据ISO 12620-1定义的参考所使用的TEI指南（参见参考[31]）提供的。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 1,
+      "chars": 299,
+      "coverage": true,
+      "selection_loss": 0.076,
+      "chosen_f1": 0.762,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "也就是说，对话行为结构的诠释是对其交际功能的诠释，应用于接收者的、发出者和维度上的诠释。附录A提供了关于DiAML语义的信息；完整的规格可以在参考文献[19]中找到。",
+      "candidates": [
+        "也就是说，对话行为结构的诠释是对其交际功能的诠释，应用于接收者的、发出者和维度上的诠释。附录A提供了关于DiAML语义的信息；完整的规格可以在参考文献[19]中找到。",
+        "也就是说，对话行为结构的解释是将它的交际功能应用于发送者、接收者的解读和维度上的解读。附录A提供了更多关于DiAML语义的信息；完整的规格可以在参考文献[19]中找到。",
+        "例如，对话行为结构的解释是将其交际功能应用于其发送者、接收者和维度的解释。附件A提供了关于DiAML语义的更多信息；完整的规格可以在参考文献[19]中找到。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 2,
+      "chars": 194,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.797,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "在词源或词根中引用引文时，可以使用<Bibl>元素。如果参考文献包含了指向外部资源的指针，则可以使用CrossREF元素<Xref>。",
+      "candidates": [
+        "在词源或词根中引用引文时，可以使用<Bibl>元素。如果参考文献包含了指向外部资源的指针，则可以使用CrossREF元素<Xref>。",
+        "在语源学或语源词中可以使用<Bibl>元素引用参考文献。如果参考文献包含指向外部来源的指针，则可以使用<CrossRef>元素的<Xref>子元素。",
+        "在词源或词根中引用引文时，可以使用<Bibl>元素。如果参考文献指向外部来源，则可以使用CrossREF元素中的<Xref>。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 3,
+      "chars": 240,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.656,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "注释1：通常情况下，一个人在其语言库中会使用多种语言风格，并能够根据他们对不同目的或领域的感知调整语言风格（3.2.1）。",
+      "candidates": [
+        "注释1：通常情况下，一个人在其语言库中会使用多种语言风格，并能够根据他们对不同目的或领域的感知调整语言风格（3.2.1）。",
+        "注释1：通常情况下，一个人在语言能力中具有多个语体，并可以根据他们对不同目的或领域的适当性的感知来调整使用语言体。（第3.2.1节）",
+        "注释：在语言库中，通常会有不止一种语言风格，并且可以根据对不同目的或领域的感知灵活使用不同的语言风格（3.2.1）。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 4,
+      "chars": 253,
+      "coverage": true,
+      "selection_loss": 0.003,
+      "chosen_f1": 0.709,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "为了达到最佳效果，请勿添加任何添加剂。应使用纯度不低于98%的高质量气体。不要使用重油或轻油。请勿使用生物燃料。此外，还应避免使用催化剂。",
+      "candidates": [
+        "为了达到最佳效果，请勿添加任何添加剂。应使用纯度不低于98%的高质量气体。不要使用重油或轻油。请勿使用生物燃料。此外，还应避免使用催化剂。",
+        "为了获得最佳效果，请勿添加任何添加剂。应使用纯度不低于98%的高质量气体。请勿使用重油或轻油。请勿使用生物燃料。此外，还应避免使用催化剂。",
+        "以下为翻译内容：\n\n为了获得最佳效果，请不要添加任何添加剂到气体中。应使用纯度达到98%或以上的高品质气体。切勿使用重质油或轻质油。请勿使用生物燃料。此外，还应避免使用催化剂。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 5,
+      "chars": 210,
+      "coverage": true,
+      "selection_loss": 0.113,
+      "chosen_f1": 0.457,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "表 17 -- 文本表示类（TextRepresentation 类）\n\n\n表格第一行：LMF 类和 LBX 构造\n表格第二行：无内容\n\n表格第三行：/\n表格第四行：\n(带)\n表格第五行：\n(带,)",
+      "candidates": [
+        "表 17 -- 文本表示类（TextRepresentation 类）\n\n\n表格第一行：LMF 类和 LBX 构造\n表格第二行：无内容\n\n表格第三行：/\n表格第四行：\n(带)\n表格第五行：\n(带,)",
+        "表格 17 - 文本表示类（TextRepresentation class）\n\n\n表头：/\n文本表示/\n第一行：\n├── LMF 类\n└── LBX 构造\n\n第一列：\n│    表示类\n│    LBX 构建器\n\n第二行：\n├── /TextRepresentation/\n\n第三行：\n├── (with)\n└── (with,)",
+        "表 17 - 文本表示类（TextRepresentation）\n\n\n文本表示类 /TextRepresentation/\n\n\n<tr>\n<td rowspan=\"3\">\nLMF 类\n</td>\n<td></td>\n</tr>\n<tr>\n<td>(with)\n</td>\n</tr>\n<tr>\n<td>(with,)</td>\n</tr>"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 6,
+      "chars": 275,
+      "coverage": true,
+      "selection_loss": 0.073,
+      "chosen_f1": 0.603,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "例句：一个动词在亚语法规则（3.2）交替中可能有不同的语法行为类型，例如主动语态、被动语态、反身代词等。注释1：“语法行为”是在子类别框架（subcategorization frame）下描述的。[[9][12]]",
+      "candidates": [
+        "例句：一个动词在亚语法规则（3.2）交替中可能有不同的语法行为类型，例如主动语态、被动语态、反身代词等。注释1：“语法行为”是在子类别框架（subcategorization frame）下描述的。[[9][12]]",
+        "一个动词在超类别的框架（3.2）交替中可以具有不同的句法行为，如主动语态、被动语态、反身代词等。注意：注释1：“句法行为”描述为超类别的框架。",
+        "一个动词在（3.2）中子分类框架（frame）的交替中可以表现出不同的语法行为类型，如主动语态、被动语态、反身等。注释1：语法行为描述基于子分类框架。$^{[9][12]}$"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 7,
+      "chars": 224,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.846,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "ISO 24610-1:2006 提供了多种表示歧义的方法，例如在特征值级别上。这些机制可用于处理出现在词形内容中的歧义。",
+      "candidates": [
+        "ISO 24610-1:2006 提供了多种表示歧义的方法，例如在特征值级别上。这些机制可用于处理出现在词形内容中的歧义。",
+        "ISO 24610-1:2006 规范了表示歧义的方法，例如在词形中的特征值层面。这些机制可用于处理出现在一个单词形式中的歧义情况。",
+        "ISO 24610-1:2006 提供了多种表示歧义的方法，例如在特征值级别上。这些机制可用于处理出现在词形内容中的歧义。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 8,
+      "chars": 259,
+      "coverage": true,
+      "selection_loss": 0.06,
+      "chosen_f1": 0.602,
+      "calls": 4,
+      "picked": 1,
+      "chosen": "术语提取是一种超越简单术语提取的工作，由包括一般语言专业人士和特定领域的术语学家在内的众多专家共同完成，还包括语义工程师、信息科学家和数据科学家等。",
+      "candidates": [
+        "术语提取，超越了简单地提取术语本身的过程，由包括语言专业人士（一般）和特别是术语学家在内的各种专家进行，以及语义工程师、信息科学家和数据科学家等参与其中。",
+        "术语提取是一种超越简单术语提取的工作，由包括一般语言专业人士和特定领域的术语学家在内的众多专家共同完成，还包括语义工程师、信息科学家和数据科学家等。",
+        "术语提取是一种超越简单术语提取的工作，由包括语言专业人士（一般）和专门的术语学家在内的各类专家进行，还包括 Ontology 工程师以及信息和数据科学家。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 9,
+      "chars": 274,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.83,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "@corresp 属性确保了 <listAnnotation> 元素与正在注释的内容相关联，而 @target 属性则编码了 <span> 元素与表示给定词形的标记之间的关系。",
+      "candidates": [
+        "@corresp 属性确保了 <listAnnotation> 元素与正在注释的内容相关联，而 @target 属性则编码了 <span> 元素与表示给定词形的标记之间的关系。",
+        "@corresp 属性确保了<listAnnotation>元素与被注释的内容相对应，并且@target属性编码了<spn>元素之间的关系和代表给定词形的标记之间的关系。",
+        "@corresp 属性确保了 `<listAnnotation>` 元素与其注释的内容之间有明确的对应关系，并且 @target 属性编码了 `<span>` 元素与表示给定词形的令牌之间的关系。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 10,
+      "chars": 205,
+      "coverage": true,
+      "selection_loss": 0.041,
+      "chosen_f1": 0.673,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "非连续的词元序列也可以与单个词汇形式关联起来，例如处理某些材料插入到词汇形式中的情况（如图17所示）。",
+      "candidates": [
+        "非连续的词元序列也可以与单个词汇形式关联起来，例如处理某些材料插入到词汇形式中的情况（如图17所示）。",
+        "非连续的令牌也可以与单个词形关联起来，例如处理某些材料插入到词形组成部分中的情况，如图17所示。",
+        "非连续的令牌也可以与一个词形关联起来，例如处理词汇形式中的某些材料插入到其组成部分中的情况，如图17所示。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 11,
+      "chars": 243,
+      "coverage": true,
+      "selection_loss": 0.017,
+      "chosen_f1": 0.615,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "当粒度粗放时，字符序列auquel没有被分解，并对应于一个单个令牌，但是与此单个令牌相关的词形有两组不同。这在图13中显示。",
+      "candidates": [
+        "当粒度粗放时，字符序列auquel没有被分解，并对应于一个单个令牌，但是与此单个令牌相关的词形有两组不同。这在图13中显示。",
+        "当粒度粗放时，字符序列中的词没有被分解，对应一个单个标记符，但是和这个单一标记符相关的有两个不同的词形变体。这就是在图13中编码的。",
+        "当优先考虑粗粒度时，字符序列auquel不被分解，对应于单个标记符，但这个单一标记符关联有两组不同的词形。这在图13中表示。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 12,
+      "chars": 178,
+      "coverage": true,
+      "selection_loss": 0.037,
+      "chosen_f1": 0.739,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "对本文件的任何反馈或问题应直接提交给用户的国家标准化组织。这些机构的完整列表可在此网址上找到：www.iso.org/members.html。",
+      "candidates": [
+        "对本文件的任何反馈或问题应直接提交给用户的国家标准化组织。这些机构的完整列表可在此网址上找到：www.iso.org/members.html。",
+        "对本文件有任何反馈或问题，请直接向用户所属国家标准组织提出。这些组织的具体名单可参见www.iso.org/members.html。",
+        "对本文件中的任何反馈或问题，请发送至用户的国家标准化机构。这些机构的完整列表可在www.iso.org/members.html中找到。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 13,
+      "chars": 219,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.71,
+      "calls": 4,
+      "picked": 1,
+      "chosen": "有时使用显式标识符来识别那个数据类别可能比依赖于隐含关系更为有用，以便区分它与其他形态语法类别的不同，例如性别、时态等。",
+      "candidates": [
+        "有时，为了区分某些语义范畴与其相关的其他语法学范畴（如性别、时态等），明确标识数据类别可能更为有用。",
+        "有时使用显式标识符来识别那个数据类别可能比依赖于隐含关系更为有用，以便区分它与其他形态语法类别的不同，例如性别、时态等。",
+        "有时没有必要依赖这种隐含的关系，而应使用明确标识符来指代那个数据类别，以便区分它与其他形态语义类别的数据，如性别、时态等。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 14,
+      "chars": 233,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.77,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "一种词义学的观点认为，词汇含义可以与其概念相关联，并且具体而言，一个单词的不同含义常常与不同的语法对象相关的语义类别有关。",
+      "candidates": [
+        "一种词义学的观点认为，词汇含义可以与其概念相关联，并且具体而言，一个单词的不同含义常常与不同的语法对象相关的语义类别有关。",
+        "词义学的一种观点认为，词汇意义可以与概念相联系，并且具体地说，一个单词的不同含义常常与其语法对象相关的不同语义类别相关联。",
+        "一种词义学的观点认为，词汇意义可以与概念相关联，并且特别指出，一个单词的不同含义通常与其语法对象相关的不同语义类别有关。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 15,
+      "chars": 294,
+      "coverage": true,
+      "selection_loss": 0.068,
+      "chosen_f1": 0.546,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "No：这些安全措施是进行燃料储罐工作所必需的最低限度的安全措施。当地法规可能需要其他的额外安全措施。  \nYes：这些安全措施是进行燃料储罐工作所必需的最低限度的安全措施。但当地法规可能需要其他的额外安全措施。",
+      "candidates": [
+        "No：这些安全措施是进行燃料储罐工作所必需的最低限度的安全措施。当地法规可能需要其他的额外安全措施。  \nYes：这些安全措施是进行燃料储罐工作所必需的最低限度的安全措施。但当地法规可能需要其他的额外安全措施。",
+        "是否：\n\n这些安全措施是进行燃料罐工作所必需的最低限度的安全预防措施。当地规定可能需要其他安全预防措施。",
+        "无：这些安全措施是进行燃料罐作业所必需的最低限度的安全措施。当地法规可能需要其他安全措施。是：这些安全措施是进行燃料罐作业所必需的最低限度的安全措施。但当地法规可能还需要其他安全措施。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 16,
+      "chars": 316,
+      "coverage": true,
+      "selection_loss": 0.021,
+      "chosen_f1": 0.608,
+      "calls": 4,
+      "picked": 2,
+      "chosen": "### 3.5\n\n**词形**\n\n以固定了形态语法特征值的方式对词汇项目进行抽象化实例化的（参见3.6）。\n\n注释：**词形**可以没有声学或图形的实际表现形式，或者可能对应于一个或多个标记（参见3.21），而这些标记并不一定形成连续序列。",
+      "candidates": [
+        "## 3.5\n\n## 构词形式\n\n抽象化地实例化一个词汇$(3.6)$，其形态学特征值$(3.12)$在语法学环境中固定\n\n注：构词形式可以没有声韵或形态上的表现形式，或者对应于多个标记(3.21)，不一定形成连续序列。",
+        "## 3.5\n\n## 实词\n\n已固定在句法上下文中的词汇形式的形态学和语法特征值的一个抽象实例\n\n注：实词可以没有任何声学或图形表示，或者可能对应于多个标记（3.21），并且不一定形成连续序列。",
+        "### 3.5\n\n**词形**\n\n以固定了形态语法特征值的方式对词汇项目进行抽象化实例化的（参见3.6）。\n\n注释：**词形**可以没有声学或图形的实际表现形式，或者可能对应于一个或多个标记（参见3.21），而这些标记并不一定形成连续序列。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 17,
+      "chars": 198,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.718,
+      "calls": 4,
+      "picked": 1,
+      "chosen": "此外，`<span>` 元素由 MAF 定义为需要一个 `@type` 属性，该属性既可以本地定义也可以在嵌套的 `<spanGrp>` 或 `<annotationBlock>` 节点上，当存在嵌套表示时，请参见表 3。",
+      "candidates": [
+        "此外，<span>元素由MAF定义为需要一个@type属性，在嵌套表示中，如果存在，则是本地定义的或在<nesting><spanGrp>或<annotationBlock></nesting>标签内定义的，详见表3。",
+        "此外，`<span>` 元素由 MAF 定义为需要一个 `@type` 属性，该属性既可以本地定义也可以在嵌套的 `<spanGrp>` 或 `<annotationBlock>` 节点上，当存在嵌套表示时，请参见表 3。",
+        "此外，MAF定义了<span>元素需要一个@type属性，该属性可以在本地或者在嵌套的<spanspangrp>或<annotationblock>中通过，当存在嵌套表示时，请参见表3。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 18,
+      "chars": 240,
+      "coverage": true,
+      "selection_loss": 0.14,
+      "chosen_f1": 0.672,
+      "calls": 4,
+      "picked": 1,
+      "chosen": "语法描述是可选的，因此可以不进行任何句法描述而仅通过词汇实例、句法行为和意义实例来描述形态、句法和语义。",
+      "candidates": [
+        "语法描述是可选的，因此可以仅通过形态学、句法和语义的描述来描述词汇表实例（LexicalEntry）、行为（SyntacticBehaviour）和含义（Sense）。",
+        "语法描述是可选的，因此可以不进行任何句法描述而仅通过词汇实例、句法行为和意义实例来描述形态、句法和语义。",
+        "句法描述是可选的，因此可以不使用任何句法描述来描述形态和语义。词汇项、句法行为和意义实例构成一个三角形，表示形态、语法和语义。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 19,
+      "chars": 249,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.685,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "本文件将有助于进一步提升企业报告的整体清晰度，通过建立一致的设计要求（标准化注释）来规定数据可视化对象（如图表和表格），以及添加关联意义的文本对象的标准表示方法。",
+      "candidates": [
+        "本文件将有助于进一步提升企业报告的整体清晰度，通过建立一致的设计要求（标准化注释）来规定数据可视化对象（如图表和表格），以及添加关联意义的文本对象的标准表示方法。",
+        "本文件将帮助进一步提高商业报告的整体清晰度，通过建立一致的设计要求（标准化的表示方法）来制定数据可视化（如图表和表格）以及添加相关意义的文本对象的标准。",
+        "本文件将帮助进一步提升商业报告的整体清晰度，通过建立数据可视化（如图表和表格）以及附加意义文本对象的设计要求（标准化符号），从而实现一致性的设计需求。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 20,
+      "chars": 271,
+      "coverage": true,
+      "selection_loss": 0.059,
+      "chosen_f1": 0.687,
+      "calls": 4,
+      "picked": 1,
+      "chosen": "——其序列化格式可以转换为遵循RelaxNGschema（RNG、RNC）或由TEI ODD实现本文件中定义的原则而定义的XML Schema（XSD）所规定的格式，并且该格式是有效的；",
+      "candidates": [
+        "—— 其序列化格式可以转换为与 Relax NG 规范（RNG、RNC）或由《TEI ODD》定义的 XML 配置文件中定义的 XML Schema（XSD）兼容的格式，并且从而演示了该实施原则（参见参考文献[24])。",
+        "——其序列化格式可以转换为遵循RelaxNGschema（RNG、RNC）或由TEI ODD实现本文件中定义的原则而定义的XML Schema（XSD）所规定的格式，并且该格式是有效的；",
+        "—— 可以将其序列化格式转换为与 Relax NG 规范（RNG、RNC）或由 TEI ODD 实现本文件定义原则而定义的 XML Schemas（XSD）相容的格式，详见参考文献 [24]；"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 21,
+      "chars": 219,
+      "coverage": true,
+      "selection_loss": 0.029,
+      "chosen_f1": 0.738,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "这一条说明了如何将形态语法内容附着到词形上，如何定义可重用的形态语法标签集以通过标签提供紧凑的表示法，并控制这些标签的有效性。",
+      "candidates": [
+        "这一条说明了如何将形态语法内容附着到词形上，如何定义可重用的形态语法标签集以通过标签提供紧凑的表示法，并控制这些标签的有效性。",
+        "该条说明如何将形态语法内容附加到词形上，如何定义可重用的形态语法标签集以便通过标签提供紧凑的表示，并控制这些标签的有效性。",
+        "这一条款说明了如何将形态和句法信息附加到词形上，如何定义可重用的形态句法标签集以便通过标签提供紧凑的表示，并控制这些标签的有效性。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 22,
+      "chars": 188,
+      "coverage": true,
+      "selection_loss": 0.027,
+      "chosen_f1": 0.711,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "根据信息质量原则（第3.6.5.1节）：所有用于使用的信息（第3.1.2条），应包括所需最少的相关信息，以确保完整性和准确性。",
+      "candidates": [
+        "根据信息质量原则（第3.6.5.1节）：所有用于使用的信息（第3.1.2条），应包括所需最少的相关信息，以确保完整性和准确性。",
+        "根据信息质量原则（3.6.5.1），用于使用的信息（3.1.2）应包括所有相关的必要信息，且不包含不必要的其他信息以确保完整性。",
+        "根据第3.6.5.1条信息质量原则，用于使用的相关信息（第3.1.2节）包括所有相关的信息，且不需要其他额外信息以达到完整。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "C",
+      "id": 23,
+      "chars": 242,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.783,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "本条款规定了55BSG规则，该规则由8个句子长度规则（参见第7.2节）、8个段落规则（参见第7.3节）、14个构造规则（参见第7.4节）、6个修饰规则（参见第7.5节）、12个词汇规则（参见第7.6节）和7个其他规则（参见第7.7节）。",
+      "candidates": [
+        "本条款规定了55BSG规则，该规则由8个句子长度规则（参见第7.2节）、8个段落规则（参见第7.3节）、14个构造规则（参见第7.4节）、6个修饰规则（参见第7.5节）、12个词汇规则（参见第7.6节）和7个其他规则（参见第7.7节）。",
+        "本条文规定了上述的55项BGB规则，其中包括了8个句子长度的规则（见第7章第2节），8个段落长度的规则（见第7章第3节），14个构造长度的规则（见第7章第4节），6个修饰长度的规则（见第7章第5节），12个词汇长度的规则（见第7章第6节）和7个其他规则（见第7章第7节）。",
+        "本条款提供了BSG规则中的第55条，该规则由8个句长规则组成（参见7.2节），8个段落规则（参见7.3节），14个构造规则（参见7.4节），6个修饰性规则（参见7.5节），12个词汇规则（参见7.6节）和7个其他规则（参见7.7节）。"
+      ],
+      "plan": "",
+      "checklist": null
+    },
+    {
+      "protocol": "D",
+      "id": 0,
+      "chars": 175,
+      "coverage": true,
+      "selection_loss": 0.047,
+      "chosen_f1": 0.827,
+      "calls": 4,
+      "picked": 1,
+      "chosen": "表格B.1中列出的属性由TEI指南（参见参考文献[31]）提供，旨在处理根据ISO 12620-1定义的引用。",
+      "candidates": [
+        "表B.1中列出的属性是根据ISO 12620-1定义的引用所使用的TEI指南（见参考文献[31]）提供的。",
+        "表格B.1中列出的属性由TEI指南（参见参考文献[31]）提供，旨在处理根据ISO 12620-1定义的引用。",
+        "表B.1中列出的属性由TEI指南（参见参考文献[31]）提供，用于处理根据ISO 12620-1定义的引用。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 1,
+      "chars": 299,
+      "coverage": true,
+      "selection_loss": 0.025,
+      "chosen_f1": 0.83,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "例如，对话行为结构的理解是对其交际功能的解释，应用于对它的发送者、接收者和维度的解读。附录A提供了关于DiAML语义的更多信息；参见参考文献[19]以获得完整规格。",
+      "candidates": [
+        "例如，对话行为结构的理解是对其交际功能的解释，应用于对它的发送者、接收者和维度的解读。附录A提供了关于DiAML语义的更多信息；参见参考文献[19]以获得完整规格。",
+        "即，对话行为结构的解释就是将其交际功能应用于其发送者、接收者以及维度上的解释。附件A提供了关于DiAML语义的更多信息；完整的规格见参考文献[19]。",
+        "例如，对话行为结构的理解是对其交际功能的解释，应用于理解其发送者、接收者以及维度。附件A提供了关于DiAML语义的信息；完整的规格可以在参考文献[19]中找到。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 2,
+      "chars": 194,
+      "coverage": true,
+      "selection_loss": 0.001,
+      "chosen_f1": 0.765,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "在词汇来源或词根中引用引文时，可以使用<Bibl>元素。如果参考文献指向外部资源，则可以使用CrossREF元素中的<Xref>。",
+      "candidates": [
+        "在词汇来源或词根中引用引文时，可以使用<Bibl>元素。如果参考文献指向外部资源，则可以使用CrossREF元素中的<Xref>。",
+        "在定义词源或词根时，可以使用<Bibl>元素引用文献。如果参考文献指向外部来源，则可以使用CrossREF元素<Xref>进行引用。",
+        "在词源或词根中引用文献时，可以使用<Bibl>元素。如果参考文献包含指向外部来源的指针，则可以使用<CrossRef>元素中的<Xref>。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 3,
+      "chars": 240,
+      "coverage": true,
+      "selection_loss": 0.061,
+      "chosen_f1": 0.651,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "注释 1：通常情况下，一个人在其语言库中会使用多种语言风格，并且可以根据其对不同目的或领域的感知来调整语言风格（第3.2.1节）。",
+      "candidates": [
+        "注释 1：通常情况下，一个人在其语言库中会使用多种语言风格，并且可以根据其对不同目的或领域的感知来调整语言风格（第3.2.1节）。",
+        "注释1：通常情况下，一个人在语言能力库中会拥有多种语体，并可以根据不同目的或领域的适当性调整其语言使用的语体（3.2.1）。",
+        "注释1：通常情况下，一个人在其语言库中会使用不止一种语言风格，并且可以根据对不同目的或领域的适当性的感知来调整其语言风格的使用（3.2.1）。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 4,
+      "chars": 253,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.75,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "为了达到最佳效果，请不要添加任何添加剂。应使用纯度为98%或更高的高质量气体。不应使用重油或轻油。也不应使用生物燃料。此外，应避免使用催化剂。",
+      "candidates": [
+        "为了达到最佳效果，请不要添加任何添加剂。应使用纯度为98%或更高的高质量气体。不应使用重油或轻油。也不应使用生物燃料。此外，应避免使用催化剂。",
+        "为了获得最佳效果，请勿向气体中添加任何添加剂。应使用纯度为98%或更高的高质量气体。避免使用重油和轻油。同样，不应使用生物燃料。此外，也应避免使用催化剂。",
+        "以下为英文原文：\n为了达到最佳效果，请勿添加任何添加剂剂到气体中。您应使用纯度不低于98%的高质量气体。切勿使用重油或轻油。请勿使用生物燃料。此外，也应避免使用催化剂。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 5,
+      "chars": 210,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.768,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "表 17 - 文本表示类（TextRepresentation class）\n\n\n表格：\n- LMF 类\n- LBX 构造\n\n\n目录：\n- /TextRepresentation/\n    - （带有）\n    - （带有，）",
+      "candidates": [
+        "表 17 - 文本表示类（TextRepresentation class）\n\n\n表格：\n- LMF 类\n- LBX 构造\n\n\n目录：\n- /TextRepresentation/\n    - （带有）\n    - （带有，）",
+        "表格 17 - TextRepresentation 类\n\n```plaintext\n表头：LMF类 \n行头：LBX构造  \n```\n\n---\n\n```plaintext\n/TextRepresentation/\n表头：无  \n行头：\n（包含）\n（包含，）  \n```",
+        "表 17 -- 文本表示类(TextRepresentation class)"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 6,
+      "chars": 275,
+      "coverage": true,
+      "selection_loss": 0.058,
+      "chosen_f1": 0.671,
+      "calls": 4,
+      "picked": 1,
+      "chosen": "例句中的动词在子类别化框架（3.2）交替中具有不同的语法行为类型，例如主动语态、被动语态、反身等。注意：参见条目注释1：语法行为被描述为子类别化框架。",
+      "candidates": [
+        "例A：一个动词在句法行为上可以有不同的类型变化，如主动语态、被动语态、反身等。注意（1）：句法行为描述以子分类框架为基础。",
+        "例句中的动词在子类别化框架（3.2）交替中具有不同的语法行为类型，例如主动语态、被动语态、反身等。注意：参见条目注释1：语法行为被描述为子类别化框架。",
+        "一个动词在子类别框架（3.2）交替中可以有不同的句法行为类型，例如主动语态、被动语态、反身等。注释1：句法行为描述基于子类别框架。$^{[9][12]}$"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 7,
+      "chars": 224,
+      "coverage": true,
+      "selection_loss": 0.046,
+      "chosen_f1": 0.8,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "ISO 24610-1:2006提供了几种表示歧义的方法，例如在特征值级别上。这些机制可以用于处理出现在单词形式中的歧义情况。",
+      "candidates": [
+        "ISO 24610-1:2006提供了几种表示歧义的方法，例如在特征值级别上。这些机制可以用于处理出现在单词形式中的歧义情况。",
+        "ISO 24610-1:2006 提供了多种表示歧义的方法，例如在特征值级别上。这些机制可用于处理出现在词形内容中的歧义情况。",
+        "ISO 24610-1:2006 提供了表示歧义的方式，例如在特征值层面上。这些机制可用于处理出现在单词形式内容中的歧义。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 8,
+      "chars": 259,
+      "coverage": true,
+      "selection_loss": 0.04,
+      "chosen_f1": 0.576,
+      "calls": 4,
+      "picked": 1,
+      "chosen": "术语提取，超越了单纯的词项抽取，是由包括语言专业人士在内的各类专家进行的，这些专家还包括专门从事术语学的专业人士、以及ontology工程师和信息/数据科学家。",
+      "candidates": [
+        "术语提取（不局限于单纯词句的提取）则由多种专家完成，包括但不限于一般语言专业人员和专门的术语学家，以及领域知识工程师、信息科学家和数据科学家等。",
+        "术语提取，超越了单纯的词项抽取，是由包括语言专业人士在内的各类专家进行的，这些专家还包括专门从事术语学的专业人士、以及ontology工程师和信息/数据科学家。",
+        "术语提取，超越了单纯的术语提取，由包括一般语言专业人士和特定的术语专家在内的多个领域专家进行，如语义工程师、信息科学家和数据科学家等共同参与。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 9,
+      "chars": 274,
+      "coverage": true,
+      "selection_loss": 0.031,
+      "chosen_f1": 0.82,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "@corresp 属性确保了<listAnnotation>元素与正在注释的内容相关联的句子之间有明确的对应关系，并且@target属性编码了<span>元素与表示给定词形的标记之间的关系。",
+      "candidates": [
+        "@corresp 属性确保了<listAnnotation>元素与正在注释的内容相关联的句子之间有明确的对应关系，并且@target属性编码了<span>元素与表示给定词形的标记之间的关系。",
+        "@corresp 属性确保了 <listAnnotation> 元素与正在注释的内容相关的句子之间有明确的对应关系，并且 @target 属性编码了 <span> 元素与表示给定词形的标记之间的关系。",
+        "@corresp 属性确保了 `<listAnnotation>` 元素和正在注释的内容之间的明确对应关系，而 @target 属性则编码了 `<span>` 元素和代表给定词形的令牌之间的关系。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 10,
+      "chars": 205,
+      "coverage": true,
+      "selection_loss": 0.075,
+      "chosen_f1": 0.646,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "非连续的序列令牌也可以与其唯一的词形相关联，例如处理其中某些材料插入到词形中的情况，如图17所示。",
+      "candidates": [
+        "非连续的序列令牌也可以与其唯一的词形相关联，例如处理其中某些材料插入到词形中的情况，如图17所示。",
+        "也可以为非连续的词组序列关联一个单个词形，例如处理在词形中插入某些材料的情况，如图17所示。",
+        "非连续的令牌也可以与单个词形相关联，例如处理某些材料插入到词形组成部分中的情况，如图17所示。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 11,
+      "chars": 243,
+      "coverage": true,
+      "selection_loss": 0.044,
+      "chosen_f1": 0.582,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "当粒度粗放时，字符序列不进行分解，对应于一个单个标记，但与此单一标记相关的词形有两个不同的。这在图13中所示。",
+      "candidates": [
+        "当粒度粗放时，字符序列不进行分解，对应于一个单个标记，但与此单一标记相关的词形有两个不同的。这在图13中所示。",
+        "当优先考虑粗粒度时，字符序列auquel未分解，并且对应于单个令牌，但与该单个令牌相关的有两个不同的词形。如图13所示。",
+        "当粒度粗时，字符序列中不进行分解，并且对应于单个词的一个词形有两个不同的词形与其关联。这种情况下，如图13所示进行编码。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 12,
+      "chars": 178,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.818,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "对本文件中的任何反馈或问题，请转交至用户的国家标准化机构。这些机构的完整名单可参见www.iso.org/members.html。",
+      "candidates": [
+        "对本文件中的任何反馈或问题，请转交至用户的国家标准化机构。这些机构的完整名单可参见www.iso.org/members.html。",
+        "对本文件中的任何反馈或问题，请发送至用户的国家标准化组织。这些组织的完整列表可在此网址找到：www.iso.org/members.html。",
+        "对本文件有任何反馈或问题，请直接提交给用户的国家标准化组织。这些组织的完整列表可以在www.iso.org/members.html中找到。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 13,
+      "chars": 219,
+      "coverage": true,
+      "selection_loss": 0.054,
+      "chosen_f1": 0.613,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "有时，使用明确标识符来指代特定数据类别可能比依赖隐含的关系更有用，以便与其他形态语义学数据类（如性别、时态等）区分开来。",
+      "candidates": [
+        "有时，使用明确标识符来指代特定数据类别可能比依赖隐含的关系更有用，以便与其他形态语义学数据类（如性别、时态等）区分开来。",
+        "有时，使用显式标识符来明确指代该数据类别可能更为有用，以便将其与其他形态语法类目区分开来，例如性别、时态等。",
+        "有时，不依赖于这种隐含的关系可能更有用，而是使用一个明确的标识符来指代该数据类别，以便将其与其他形态语法类目（如性别、时态等）区分开来。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 14,
+      "chars": 233,
+      "coverage": true,
+      "selection_loss": 0.005,
+      "chosen_f1": 0.707,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "一种词汇语义的观点认为词义可以和概念相关联，并且特别强调不同词义通常由与其语法对象相关的不同的语义类别来描述。",
+      "candidates": [
+        "一种词汇语义的观点认为词义可以和概念相关联，并且特别强调不同词义通常由与其语法对象相关的不同的语义类别来描述。",
+        "一种词义学的观点认为，词汇意义可以与概念相联系，并且特别指出，一个单词的不同含义常常与其语法对象所关联的语义类别不同。",
+        "一种词义学的观点认为，词汇含义可以与概念相关联，并且特别强调不同单词的含义通常与其语法对象相关的语义类别有所不同。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 15,
+      "chars": 294,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.676,
+      "calls": 4,
+      "picked": 1,
+      "chosen": "不：这些安全措施是进行燃料罐作业所必需的最低限度的安全预防措施。当地的法规可能还需要其他安全预防措施。 是：这些安全措施是进行燃料罐作业所必需的最低限度的安全预防措施。但当地的法规可能还需要其他安全预防措施。",
+      "candidates": [
+        "是否：这些安全预防措施是进行燃料罐工作所必需的最低限度的安全措施。当地的法规可能还需要其他的安全预防措施。",
+        "不：这些安全措施是进行燃料罐作业所必需的最低限度的安全预防措施。当地的法规可能还需要其他安全预防措施。 是：这些安全措施是进行燃料罐作业所必需的最低限度的安全预防措施。但当地的法规可能还需要其他安全预防措施。",
+        "是否：\n这些安全措施是进行燃料罐工作所必需的最低限度的安全措施。当地的法规可能需要其他的安全措施。\n\n是：\n这些安全措施是进行燃料罐工作所必需的最低限度的安全措施。但是，当地的法规可能需要其他的安全措施。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 16,
+      "chars": 316,
+      "coverage": true,
+      "selection_loss": 0.081,
+      "chosen_f1": 0.66,
+      "calls": 4,
+      "picked": 2,
+      "chosen": "3.5 **词形**\n\n在句法环境中固定形态学特征值的词汇形式（参见3.6）的一个抽象实例。\n\n注：**词形**可以没有声学或图形实现，或者对应于一个或多个标记（参见3.21），并不一定形成连续序列。",
+      "candidates": [
+        "### 3.5  \n词形的抽象实例化（3.6）：在句法上下文中固定了形态语义特征值（3.12）的情况下，一个词汇项  \n\n注释1：词形可以没有发音或图形表现形式，或者可能对应于一个或多个标记（3.21），并不一定形成连续序列。",
+        "3.5\n\n词形：一个词素（3.6）在语法学上下文中固定了形态学特征值（3.12）的抽象实例\n\n注释1：词形可以没有声韵或图形实现，或者可以对应多个令牌（3.21），不一定形成连续序列。",
+        "3.5 **词形**\n\n在句法环境中固定形态学特征值的词汇形式（参见3.6）的一个抽象实例。\n\n注：**词形**可以没有声学或图形实现，或者对应于一个或多个标记（参见3.21），并不一定形成连续序列。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 17,
+      "chars": 198,
+      "coverage": true,
+      "selection_loss": 0.075,
+      "chosen_f1": 0.66,
+      "calls": 4,
+      "picked": 1,
+      "chosen": "此外，MAF定义了<span>元素需要一个@type属性，既可以本地设置也可以在嵌套的<spanGrp>或<annotationBlock>中通过，当涉及到嵌套表示时，请参见表3。",
+      "candidates": [
+        "此外，MAF定义了<span>元素需要包含一个@type属性（可以本地或在嵌套的<spanGrp>或<annotationBlock>中），对于嵌套表示方式，请参见表3。",
+        "此外，MAF定义了<span>元素需要一个@type属性，既可以本地设置也可以在嵌套的<spanGrp>或<annotationBlock>中通过，当涉及到嵌套表示时，请参见表3。",
+        "此外，`<span>`元素在MAF中定义为需要一个@type属性，该属性既可以本地化也可以在嵌套的`<spanGrp>`或`<annotationBlock>`元素上，如果是嵌套表示，则参见表3。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 18,
+      "chars": 240,
+      "coverage": true,
+      "selection_loss": 0.172,
+      "chosen_f1": 0.558,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "句法描述是可选的，因此可以不必对句法进行描述来同时描述形态学和语义学。LexicalEntry、SyntacticBehavior和Sense实例构成了一个三角形，代表形态学、语法和语义学。",
+      "candidates": [
+        "句法描述是可选的，因此可以不必对句法进行描述来同时描述形态学和语义学。LexicalEntry、SyntacticBehavior和Sense实例构成了一个三角形，代表形态学、语法和语义学。",
+        "句法描述是可选的，因此可以不涉及句法描述来描述形态和语义。LexicalEntry、SyntacticBehaviour和Sense实例构成一个三角形，代表形态、语法和语义。",
+        "句法描述是可选的，因此可以不进行句法描述来描述形态学和语义。词性实例、句法行为实例以及含义实例形成一个三角形，代表形态学、语法和语义。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 19,
+      "chars": 249,
+      "coverage": true,
+      "selection_loss": 0.041,
+      "chosen_f1": 0.695,
+      "calls": 4,
+      "picked": 2,
+      "chosen": "本文件将有助于进一步提高商业报告的整体清晰度，通过建立一致的设计要求（标准化表示法）来规范数据可视化（如图表和表格），以及添加关联意义的文本对象。",
+      "candidates": [
+        "本文件将有助于进一步提高商业报告的整体清晰度，通过建立数据可视化（如图表和表格）以及添加相关意义的文本对象的设计要求（标准化的表示法），从而实现一致性。",
+        "本文件将进一步提高商业报告的整体清晰度，通过确立数据可视化（如图表和表格）以及添加关联意义的文字对象的标准设计要求（标准化表示法），从而确保一致性。",
+        "本文件将有助于进一步提高商业报告的整体清晰度，通过建立一致的设计要求（标准化表示法）来规范数据可视化（如图表和表格），以及添加关联意义的文本对象。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 20,
+      "chars": 271,
+      "coverage": true,
+      "selection_loss": 0.058,
+      "chosen_f1": 0.748,
+      "calls": 4,
+      "picked": 2,
+      "chosen": "—— 其序列化格式可以转换为与 Relax NG 规范（RNG、RNC）或由 TEI ODD 实现原则定义的 XML Schema（XSD）所规定的有效格式，该 TEI ODD 实现了本文中定义的原则并因此说明了其内容（参见参考文献[24])。",
+      "candidates": [
+        "—— 其序列化格式可以转换为与 RELAX-NG 标准（RNG、RNC）或由 TEI ODD 实现了本文原则的 XMLSchema 定义的 XSD 有效的格式，并且因此通过参考[24]所定义的 TEI ODD 这一机制进行说明。",
+        "—— 该序列化格式可以转换为遵循 RELAX NG 模式（RNG、RNC）或由 TEI ODD 实现并定义了本文件原则的 XML Schemas（XSD）规定的有效格式（参见参考文献 [24])。",
+        "—— 其序列化格式可以转换为与 Relax NG 规范（RNG、RNC）或由 TEI ODD 实现原则定义的 XML Schema（XSD）所规定的有效格式，该 TEI ODD 实现了本文中定义的原则并因此说明了其内容（参见参考文献[24])。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 21,
+      "chars": 219,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.8,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "这一条说明了如何将形态语法内容附加到词形上，以及如何通过标签定义可复用的形态语法标记集来提供紧凑的表示方法，并控制这些标记的有效性。",
+      "candidates": [
+        "这一条说明了如何将形态语法内容附加到词形上，以及如何通过标签定义可复用的形态语法标记集来提供紧凑的表示方法，并控制这些标记的有效性。",
+        "本条款展示了如何将形态语法内容附加到词形上，如何定义以供重复使用的形态语法标记集以便通过标签提供紧凑的表示，并控制这些标记的有效性。",
+        "本条说明如何将形态语法内容附加到词形上，如何定义可重用的形态语法标签集以提供紧凑的表示方法，并控制这些标签的有效性。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 22,
+      "chars": 188,
+      "coverage": true,
+      "selection_loss": 0.0,
+      "chosen_f1": 0.768,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "按照信息质量原则（3.6.5.1），用于使用的信息（3.1.2）包括所有相关且所需的最少其他信息以使其完整。",
+      "candidates": [
+        "按照信息质量原则（3.6.5.1），用于使用的信息（3.1.2）包括所有相关且所需的最少其他信息以使其完整。",
+        "根据信息质量原则（3.6.5.1），用于使用的数据（3.1.2）应包括所有相关的信息，并且需要其他信息的数量最少以使其完整。",
+        "根据《信息质量原则》(3.6.5.1)，用于使用的数据（3.1.2）应包括所有相关的信息，所需其他信息最少。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    },
+    {
+      "protocol": "D",
+      "id": 23,
+      "chars": 242,
+      "coverage": true,
+      "selection_loss": 0.146,
+      "chosen_f1": 0.673,
+      "calls": 4,
+      "picked": 0,
+      "chosen": "本条款规定了以下规则：55条BSG规则，这些规则包括8个句子长度规则（参见第7章），8个段落规则（参见第7章），14个构造规则（参见第7章），6个修饰规则（参见第7章），12个词汇规则（参见第7章）以及7个其他规则（参见第7章）。",
+      "candidates": [
+        "本条款规定了以下规则：55条BSG规则，这些规则包括8个句子长度规则（参见第7章），8个段落规则（参见第7章），14个构造规则（参见第7章），6个修饰规则（参见第7章），12个词汇规则（参见第7章）以及7个其他规则（参见第7章）。",
+        "本条款规定了BSG规则的55条，这些规则由八个句子长度的规则（见第7.2节）、八段落规则（见第7.3节）、十四个构造规则（见第7.4节）、六个修饰规则（见第7.5节）、十二个词汇规则（见第7.6节）和七个其他规则（见第7.7节）组成。",
+        "本条款规定了55个BAS规则，这些规则由8条句子长度的规则组成（参见7.2），8条段落规则（参见7.3），14条构造规则（参见7.4），6条修饰规则（参见7.5），12条词汇规则（参见7.6）和7条其他规则（参见7.7）。"
+      ],
+      "plan": "",
+      "checklist": [
+        "否定与例外：no / not / unless / except 是否全部译出，有没有把否定译成肯定",
+        "情态：shall / must / may / should 的语气是否对应（必须 / 可以 / 应当）",
+        "指代：latter / former / such / it 指的是哪个成分，主语是否明确",
+        "条件与范围：if / when / where / applies to 的限定是否挂在正确的成分上",
+        "术语：术语是否与原文一致，同一个词前后是否统一",
+        "括注与编号：括号里的条款号、图号、缩写是否漏译或错位",
+        "结构：英文长句拆分后，中文有没有丢掉逻辑连接",
+        "增译：有没有加入原文没有的信息"
+      ]
+    }
+  ],
+  "detect": [
+    {
+      "id": 0,
+      "hit": 0,
+      "target": 5,
+      "answer": "“Note that accepting a request or a suggestion is itself a commissive act”应改为“Note that accepting a request or a suggestion is itself a commissive act.”",
+      "reason": "addressee两处译发送者，颠倒指令执行对象；现成改文恢复接收者。"
+    },
+    {
+      "id": 1,
+      "hit": 0,
+      "target": 5,
+      "answer": "原文和译文的结构一致，但译文中的“通常”一词在中文中可能不完全准确地传达了原文的意思。正确的翻译应该是：“通常用于提供更外围、更一般的信息。”",
+      "reason": "general是一般性/适用范围，常规改变该属性，改文保外围和一般性并列。"
+    },
+    {
+      "id": 2,
+      "hit": 0,
+      "target": 5,
+      "answer": "原文和译文都使用了“即”字，但翻译时没有准确传达这种关系，导致理解上的偏差。正确的翻译应该是：“例如，对话行为结构的解释是其交际功能的解释，应用于发送者、接收者及维度的解释。”",
+      "reason": "applied to在组合语义为解释函数对参数应用，不是一般适用范围，坏译丢计算构造关系。"
+    },
+    {
+      "id": 3,
+      "hit": 0,
+      "target": 5,
+      "answer": "整个语料库范围有问题，应为“整个语料库”。",
+      "reason": "annotation guidelines 为一个名词词组。原文在 annotation 和 guidelines 后分别标注定义号，并未用逗号将二者并列。中文增入顿号改变了定义的句法结构。"
+    },
+    {
+      "id": 4,
+      "hit": 1,
+      "target": 5,
+      "answer": "错误：将“only the meaning”翻译为“只借入意义”，但原文中并没有明确表示是“只借入意义”。正确的翻译应为：“只借用意义。”",
+      "reason": "【S0118】主宾关系缺失且指称不清。“由逐字译成本语言而来”未交代被翻译的对象，结构也不完整；borrowing language是实施借入的语言，不应笼统称“本语言”。改为将原词语直译成借入语，保留“只借入意义”和借词这一上位概念。"
+    },
+    {
+      "id": 5,
+      "hit": 0,
+      "target": 5,
+      "answer": "原文和译文都存在一个错误：在“（7b）”和“（7c）”之间缺少了逗号。",
+      "reason": "bottom line限定只替换最后一行，不能扩为整个(7b)表示。"
+    },
+    {
+      "id": 6,
+      "hit": 0,
+      "target": 5,
+      "answer": "目标是对句法描述进行分解复用，并在词库中保持最少的“句法行为”实例。",
+      "reason": "主语是框架集，谓语是groups，宾语是对某些词位集合经常出现的多种句法构式。现译把“经常出现”接到框架集上，末尾“分组”也未形成完整动宾结构。"
+    },
+    {
+      "id": 7,
+      "hit": 0,
+      "target": 5,
+      "answer": "翻译有误：\"Publication as an International Standard requires approval by at least 75 % of the member bodies casting a vote.\" 应改为：\"Publication as an International Standard requires approval by at least 75% ",
+      "reason": "75%的分母是参与投票成员，坏译未保限定而可读全体成员，改文清晰恢复分母。"
+    },
+    {
+      "id": 8,
+      "hit": 0,
+      "target": 5,
+      "answer": "原文和译文的逻辑关系不一致。",
+      "reason": "documentation是文档说明不限记录差异；源文关键条件更广，算法符合性名词同时规范。"
+    },
+    {
+      "id": 9,
+      "hit": 0,
+      "target": 5,
+      "answer": "原文和译文都使用了“指定”一词，但翻译时应避免重复。",
+      "reason": "后文total及inverse证明function数学义；编码功能不够准确，非一般同义偏好。"
+    },
+    {
+      "id": 10,
+      "hit": 0,
+      "target": 5,
+      "answer": "本段翻译没有问题。",
+      "reason": "intuitive不是主观，seems的试探判断也应保留；无须改条目词头。"
+    },
+    {
+      "id": 11,
+      "hit": 0,
+      "target": 5,
+      "answer": "原文与译文意思不一致。",
+      "reason": "in turn表示下一结构层，不是反过来，逆向关系无英文依据；实例化了的完成态亦可整理。"
+    },
+    {
+      "id": 12,
+      "hit": 0,
+      "target": 5,
+      "answer": "原文和译文都存在一些不一致的地方。原文中“feedback act”是“反馈行为”的缩写，而译文中没有这个缩写形式。因此，正确的译文应该是：“反馈行为（3.8）”。",
+      "reason": "信息描述的是发送者对他人话语的处理情况，坏译把它变成发送者所处理的信息，改变反馈的语义对象。"
+    },
+    {
+      "id": 13,
+      "hit": 0,
+      "target": 5,
+      "answer": "原文和译文的衔接不自然，应将“相关实例”改为“相关实例”。",
+      "reason": "which are roots限定LexicalEntry实例本身为词根且含重构词根，坏译拆散为相关实例及特别情况，关键模型对象条件丢失。"
+    },
+    {
+      "id": 14,
+      "hit": 0,
+      "target": 5,
+      "answer": "错误：译文将“possibly”翻译为“可能”，但原文中的“possibly”意指“可能的”，应改为“possible”。",
+      "reason": "possibly idiosyncratic指可能有特定约定，不能确定全部自定义；改文保可能范围及记法类列举。"
+    },
+    {
+      "id": 15,
+      "hit": 0,
+      "target": 5,
+      "answer": "翻译有误。原文中的“speech editing acts”应翻译为“语音编辑行为”。",
+      "reason": "自我修正不能写自发修正；言语生成和重新起说限定在对话而非设备重启。"
+    },
+    {
+      "id": 16,
+      "hit": 0,
+      "target": 5,
+      "answer": "原文和译文都正确。",
+      "reason": "修辞关系Specification是具体说明而非规范，英文括注不足以抵消中文误义。"
+    },
+    {
+      "id": 17,
+      "hit": 0,
+      "target": 5,
+      "answer": "“标注方案”翻译成中文是“annotation scheme”，但这个术语在英语文献中并不常见，可能需要更准确的翻译或解释。",
+      "reason": "可省略的是已有更概括功能可替代的具体功能；中文却允许省略不太具体的功能，方向相反。"
+    },
+    {
+      "id": 18,
+      "hit": 0,
+      "target": 5,
+      "answer": "原文和译文都使用了“书面”一词，但译文中“书面”的含义与原文不符。",
+      "reason": "such as后语言资源为书面文本实例，坏译把它变全体限制定语，缩窄重用对象。"
+    },
+    {
+      "id": 19,
+      "hit": 0,
+      "target": 5,
+      "answer": "原文和译文基本一致，没有明显的错误。",
+      "reason": "原文将语义内容描述行为作为共同性质；“通常”无依据地引入了例外。"
+    },
+    {
+      "id": 20,
+      "hit": 2,
+      "target": 5,
+      "answer": "原文和译文的结构基本一致，但译文中“utterances”翻译为“话语”，而原文中“utterances”是“话语”的复数形式，因此需要修改。正确的译文应为：“当讲话者发出信号（例如通过使用升调或插入停顿）表示其希望继续发言时，话轮中的非终结性话语具有话轮保持功能。”",
+      "reason": "filled pause为含呃嗯填充语的停顿，插入停顿不能区别静默和有声填充。"
+    },
+    {
+      "id": 21,
+      "hit": 0,
+      "target": 5,
+      "answer": "错误： 译文中的“是”应该用第三人称复数形式“are”。",
+      "reason": "the rest of existing documents为其余文档集合，不是文档内部其余部分；改文保例子要说明的拆句。"
+    },
+    {
+      "id": 22,
+      "hit": 0,
+      "target": 5,
+      "answer": "“不同的动词含义是通过它们的论元语义角色的差异来区分的。”",
+      "reason": "They承接不同动词词义/事态，不能改为参与者具不同蕴涵。"
+    },
+    {
+      "id": 23,
+      "hit": 0,
+      "target": 5,
+      "answer": "错误：将“specific date”翻译为“特定时间”，但应改为“特定日期”。",
+      "reason": "free to accept问有无档期，不是是否决定接受；date(s)也应保具体日期。"
+    }
+  ]
+}
