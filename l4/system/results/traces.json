@@ -1,0 +1,458 @@
+[
+  {
+    "id": 0,
+    "reason": "法院或政府机构给予的是授权 定义使用 has been granted authorization，明确是已获授权。现译“资质认证”继续将授权关系误读为资格认证；与3.3.24已有资格条件的定义也没有形成应有区别。",
+    "baseline": "问题类型：漏译\n依据：原文中缺少“获得”一词来表示授权。\n建议：在“获法院或政府机构资质认证”前添加“获得”。",
+    "baseline_sec": 4.13,
+    "evidence": "问题类型：漏译\n依据：原文中的“who”没有在译文中出现。\n建议：将“who”添加到译文中，使其更符合原文的意思。",
+    "evidence_sec": 1.1,
+    "evidence_text": "原文：string of characters (3.5) that has been collected by means of term extraction (3.20) but has not yet been selected as a relevant term (3.19) to be considered for inclusion in a terminological data (3.22) collection\n译文：通过术语抽取（3.20）收集，但尚未被选定为可考虑纳入术语数据（3.22）集合的相关术语（3.19）的字符（3.5）串\n\n原文：The generic library mechanism provided by FSR is illustrated by Figures 29 and 30, showing, respectively, the way ",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中缺少“获得”一词来表示授权。",
+      "建议": "在“获法院或政府机构资质认证”前添加“获得”。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“who”没有在译文中出现。",
+      "建议": "将“who”添加到译文中，使其更符合原文的意思。"
+    }
+  },
+  {
+    "id": 1,
+    "reason": "application在该术语工作词汇标准标题中不是计算机应用程序；改变文件主题。",
+    "baseline": "问题类型：漏译\n依据：\"theory\"\n建议：将 \"Theory\" 改为 \"理论\"。",
+    "baseline_sec": 0.71,
+    "evidence": "问题类型：漏译\n依据：原文中“that application”（那款应用程序）\n建议：将“那款应用程序”改为“该应用程序”。",
+    "evidence_sec": 0.91,
+    "evidence_text": "原文：Terminology extraction requires a deep understanding of terminology theory and terminology work.\n译文：术语数据抽取需要深入理解术语理论与术语工作。\n\n原文：Depending on the machines, that application is not available. \n译文：那款应用程序在有的机器上不可用。\n\n原文：No: That application is not found on all machines. \n译文：不推荐写法：那款应用程序并非在所有机器上都能找到。",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "\"theory\"",
+      "建议": "将 \"Theory\" 改为 \"理论\"。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中“that application”（那款应用程序）",
+      "建议": "将“那款应用程序”改为“该应用程序”。"
+    }
+  },
+  {
+    "id": 2,
+    "reason": "for use in standardization 修饰所维护数据库的用途；现译“维护术语数据库在标准中的使用”改变了宾语关系。",
+    "baseline": "问题类型：漏译\n依据：原文中“maintain”一词\n建议：将“maintain”改为“maintain”以保持一致性和准确性。",
+    "baseline_sec": 1.01,
+    "evidence": "问题类型：漏译\n依据：原文中“apply”（适用）\n建议：将“apply”改为“applies”，以保持一致性和准确性。",
+    "evidence_sec": 0.98,
+    "evidence_text": "原文：ISO and IEC maintain terminological databases for use in standardization at the following addresses:\n译文：ISO和IEC在下列地址维护供标准化使用的术语数据库：\n\n原文：For the purposes of this document, the following terms and definitions apply\n\nISO and IEC maintain terminological databases for use in standardization at the following addresses:\n译文：下列术语和定义适用于本文件。 ISO和IEC维护供标准化工作使用的术语数据库，访问地址如下：\n\n原文：ISO and IEC maintain termino",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中“maintain”一词",
+      "建议": "将“maintain”改为“maintain”以保持一致性和准确性。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中“apply”（适用）",
+      "建议": "将“apply”改为“applies”，以保持一致性和准确性。"
+    }
+  },
+  {
+    "id": 3,
+    "reason": "“元素，无论是否属于字母系统”使限定对象从“书写系统是否为字母文字系统”移到了“元素是否属于该系统”。必须恢复限定对象；长定义可以保留，但语法层次要清楚。",
+    "baseline": "问题类型：漏译\n依据：\"phoneme\"\n建议：在译文中添加 \"音位\" 或 \"音素\"，以准确传达原文的意思。例如：\"发音单元\" 或 \"音位\"。",
+    "baseline_sec": 1.26,
+    "evidence": "问题类型：漏译\n依据：原文中“element of a writing system”没有被完全翻译成中文。\n建议：将“书写系统中的元素”改为“书写系统中的元素”。",
+    "evidence_sec": 1.12,
+    "evidence_text": "原文：## 3.20\n\n## character\n\ngraphic character \n\nelement of a writing system, whether or not alphabetical, that represents a phoneme (3.18), a syllable, a word (3.7) or even prosodic characteristics of the language, by using g\n译文：3.20 字符\n书写字符\n书写系统（无论是否为字母文字系统）中的元素，使用图形符号（字母、附加符号、音节符号、标点、韵律重音符号等）或这些符号的组合（例如带重音或附加符号的字母），表示音位（3.18）、音节、词（3.7），甚至语言的韵律特征。\n示例：因此，a、B、ω或Γ既是字符，也是基本字母。\n注1：另见ISO/IEC\n\n原文：element ",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "\"phoneme\"",
+      "建议": "在译文中添加 \"音位\" 或 \"音素\"，以准确传达原文的意思。例如：\"发音单元\" 或 \"音位\"。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中“element of a writing system”没有被完全翻译成中文。",
+      "建议": "将“书写系统中的元素”改为“书写系统中的元素”。"
+    }
+  },
+  {
+    "id": 4,
+    "reason": "S0063：标准文件语境中的amendments对应“修改单”；“修订件”易与标准修订后产生的新版本混淆。仅订正这一固定用语，不改动引用适用规则。",
+    "baseline": "问题类型：漏译\n依据：原文中的“undated”（未注明日期）\n建议：将“未注明日期的引用文件”改为“未注明日期的引用文件（包括任何修订件）”。",
+    "baseline_sec": 1.23,
+    "evidence": "问题类型：一致性\n依据：原文“for dated references”和“for undated references”\n建议：将两个段落合并为一个，统一使用“for dated references”，以保持一致性和简洁性。",
+    "evidence_sec": 1.22,
+    "evidence_text": "原文：The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references,\n译文：下列文件通过文中的规范性引用，使其部分或全部内容构成本文件的要求。凡注日期的引用文件，仅所注日期的版本适用；凡不注日期的引用文件，其最新版本（包括所有修改单）适用。\n\n原文：The following documents are referred to in the text in such a way that some or all of ",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“undated”（未注明日期）",
+      "建议": "将“未注明日期的引用文件”改为“未注明日期的引用文件（包括任何修订件）”。"
+    },
+    "ev_parts": {
+      "问题类型": "一致性",
+      "依据": "原文“for dated references”和“for undated references”",
+      "建议": "将两个段落合并为一个，统一使用“for dated references”，以保持一致性和简洁性。"
+    }
+  },
+  {
+    "id": 5,
+    "reason": "S0082：pragmatically修饰uniform，限定统一性是在实际应用层面实现的；原译把两者改为“实用”和“统一”两个并列性质。恢复修饰关系。",
+    "baseline": "问题类型：漏译\n依据：\"pragmatically\"\n建议：在“实用”前添加“pragmatically”，以保持翻译的一致性和准确性。",
+    "baseline_sec": 1.03,
+    "evidence": "问题类型：漏译\n依据：\"Note 1 to entry\"\n建议：\"注1：通用依存关系（Universal Dependencies），见参考文献[26]\"",
+    "evidence_sec": 0.98,
+    "evidence_text": "原文：## 3.12\n\n## morphosyntactic feature\n\nfeature induced from either the inflected form (3.4) of a lexeme (3.6) or from its syntactic context, or both \n\nEXAMPLE \"grammaticalGender\". \n\nNote 1 to entry: Universal Dependencies \n译文：3.12 形态句法特征\n根据词位（3.6）的屈折形式（3.4）、其句法语境或两者共同推导出的特征。\n示例：“grammaticalGender”（语法性）。\n注1：通用依存关系（Universal Dependencies，见参考文献[26]）提供一组通用及语言特定的特征和值，旨在使跨语言语法描述在实际应用中保持统一。\n\n原文：A <compl",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "\"pragmatically\"",
+      "建议": "在“实用”前添加“pragmatically”，以保持翻译的一致性和准确性。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "\"Note 1 to entry\"",
+      "建议": "\"注1：通用依存关系（Universal Dependencies），见参考文献[26]\""
+    }
+  },
+  {
+    "id": 6,
+    "reason": "“材料插入词形”是material的机械直译。用“语言成分”或“内容”才能清楚表达该句；不改变插入位置。",
+    "baseline": "问题类型：漏译\n依据：原文中的“non-contiguous”（非连续的）\n建议：将“非连续词元序列”改为“非连续词元序列”。",
+    "baseline_sec": 1.04,
+    "evidence": "问题类型：漏译\n依据：原文中的“corresponding”一词\n建议：将“corresponding”改为“correspond”，以保持一致性和准确性。",
+    "evidence_sec": 1.04,
+    "evidence_text": "原文：The simplest case of a relationship between tokens and word-forms is when one word-form corresponds to a single token, as shown in Figure 15.\n译文：词元与词形之间最简单的关系，是一个词形对应一个词元，如图15所示。\n\n原文：Figure 25 — Sequence of tokens corresponding to a single word-form (a date) without a dictionary representation\n译文：图25——与单个词形（日期）对应的词元序列，该词形在辞典中没有对应表示\n\n原文：A token or a sequence of tokens can sometimes be identified",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“non-contiguous”（非连续的）",
+      "建议": "将“非连续词元序列”改为“非连续词元序列”。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“corresponding”一词",
+      "建议": "将“corresponding”改为“correspond”，以保持一致性和准确性。"
+    }
+  },
+  {
+    "id": 7,
+    "reason": "“符合TEI指南的句子”把符合性要求直接加在句子上，后面的“完整标注”又缺乏自然连接。需明确是标注符合指南。图A.2题名有相同问题，宜联动修改。",
+    "baseline": "问题类型：漏译\n依据：原文中的“full annotation”\n建议：将“full annotation”改为“完整的注释”。",
+    "baseline_sec": 0.77,
+    "evidence": "问题类型：漏译\n依据：原文中的“stand-off annotation”\n建议：将“stand-off annotation”翻译成“离位标注”。",
+    "evidence_sec": 0.86,
+    "evidence_text": "原文：Figure A.2 — Stand-off annotation of the sentence “I wanna put up new wallpaper” (en), in compliance with the TEI guidelines\n译文：图A.2——按照TEI指南对英语句子“我想贴上新墙纸”进行的离位标注\n\n原文：Figure A.1 is an example of annotation of the sentence “I wanna put up new wallpaper” performed within the <text> element, in compliance with the TEI Guidelines (see Reference [31]). The <entry> elements hold simplified \n译文：图A.1展示",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“full annotation”",
+      "建议": "将“full annotation”改为“完整的注释”。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“stand-off annotation”",
+      "建议": "将“stand-off annotation”翻译成“离位标注”。"
+    }
+  },
+  {
+    "id": 8,
+    "reason": "S0371：原文只说明在该情形下两种属性的选择发挥作用，并未断言只有此时才能或需要选择。原译“才”增加排他条件；同时将useful译为“适合”弱化了有益性的判断。",
+    "baseline": "问题类型：漏译\n依据：原文中的“come into play”和“make it necessary or useful”\n建议：将“come into play”改为“play a role in”，以更准确地传达原文的意思。",
+    "baseline_sec": 1.18,
+    "evidence": "问题类型：漏译\n依据：原文中的“choice”\n建议：将“choice”翻译成“选择”。",
+    "evidence_sec": 0.72,
+    "evidence_text": "原文：The TEI Guidelines (see Reference $[31]$ ) do not prescribe a specific choice between datcat and valueDatcat in such cases. The former is the generic way of referencing a data category, whereas the latter is more specifi\n译文：TEI指南没有在这类情形下强制选择datcat或valueDatcat，见参考文献[31]。datcat是引用数据类别的通用方式；valueDatcat更具体，专门引用表示值的数据类别。当一个元素或紧密组合的元素组（如上例f/symbol组合）使区分容器数据类别与其值成为必要或有益的做法时，二者的选择便具有实际意义。\n\n原文：The examp",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“come into play”和“make it necessary or useful”",
+      "建议": "将“come into play”改为“play a role in”，以更准确地传达原文的意思。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“choice”",
+      "建议": "将“choice”翻译成“选择”。"
+    }
+  },
+  {
+    "id": 9,
+    "reason": "S0356：原文a)与b)之间明确用or，说明datcat可承担两种角色之一。原译分号列举时丢失“或”，不能明确表达备选关系。只补回连接词，不改表格结构、属性名及数据类型。",
+    "baseline": "问题类型：漏译\n依据：原文中“an information container”没有对应的中文翻译。\n建议：将“an information container”改为“一个信息容器”。",
+    "baseline_sec": 0.95,
+    "evidence": "问题类型：漏译\n依据：原文中的“external taxonomy or ontology”\n建议：使用“外部分类体系或本体”来替换“外部taxonomy or ontology”，更准确地传达原文的意思。",
+    "evidence_sec": 1.22,
+    "evidence_text": "原文：Table B.1 — Attributes for handling references defined in accordance with ISO 12620-1\n\n\n<table><tr><td>Attribute</td><td colspan=\"2\">Description</td></tr><tr><td rowspan=\"3\">datcat</td><td colspan=\"2\">provides a pointer \n译文：表B.1——用于处理按照ISO 12620-1定义的引用的属性\n\n<table><tr><td>属性</td><td colspan=\"2\">描述</td></tr><tr><td rowspan=\"3\">datcat</td><td colspan=\"2\">通过引用外部分类体系或本体，提供指向以下对象的定义和/或一般\n\n原文：An appro",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中“an information container”没有对应的中文翻译。",
+      "建议": "将“an information container”改为“一个信息容器”。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“external taxonomy or ontology”",
+      "建议": "使用“外部分类体系或本体”来替换“外部taxonomy or ontology”，更准确地传达原文的意思。"
+    }
+  },
+  {
+    "id": 10,
+    "reason": "S0250：without a dictionary representation限定单个词形。原译把“在辞典中没有表示”挂接到“词元序列”，改变了缺少辞典表示的对象。明确回指词形。",
+    "baseline": "问题类型：漏译\n依据：原文中的“without a dictionary representation”\n建议：在译文中添加“但”以补全句子，使其完整。",
+    "baseline_sec": 0.92,
+    "evidence": "问题类型：漏译\n依据：原文“perhaps because no lexicon is available”\n建议：在译文中补充说明为什么无法关联到任何词条，例如：“可能因为词汇表不可用”或者“可能由于词汇表缺失”。",
+    "evidence_sec": 1.36,
+    "evidence_text": "原文：A sequence of non-contiguous tokens can also be associated with a single word-form, for instance to handle cases where some material is inserted inside the components of a word-form, as shown in Figure 17.\n译文：一组不连续词元也可以关联到单个词形，例如用于处理词形各组成部分之间插入其他材料的情形，见图17。\n\n原文：A sequence of non-contiguous tokens can also be associated with a single word-form, for instance to handle cases where some material is",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“without a dictionary representation”",
+      "建议": "在译文中添加“但”以补全句子，使其完整。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文“perhaps because no lexicon is available”",
+      "建议": "在译文中补充说明为什么无法关联到任何词条，例如：“可能因为词汇表不可用”或者“可能由于词汇表缺失”。"
+    }
+  },
+  {
+    "id": 11,
+    "reason": "S0192：原文是“词性信息”以特征结构表达形态和语法性质。现译把词性、形态性质和语法性质并列，改变了信息与其表达方式的关系。",
+    "baseline": "问题类型：漏译\n依据：原文中提到“part-of-speech information”但译文中没有提及。\n建议：在译文中添加“词性信息”。",
+    "baseline_sec": 0.98,
+    "evidence": "问题类型：漏译\n依据：原文中提到“它也可以通过部分-作用信息来描述”，但译文中没有提及这一点。\n建议：应将“它也可以通过部分-作用信息来描述”添加到译文中。",
+    "evidence_sec": 1.35,
+    "evidence_text": "原文：It can also be characterized by part-of-speech information that expresses morphological and grammatical properties as a feature structure (see 7.2).\n译文：还可以用词性信息刻画词形；这些信息以特征结构的形式表达形态属性和语法属性（见7.2）。\n\n原文：The tokens identified by <seg> elements correspond in some way to word-forms encoded as <span> elements. A word-form can be associated with a lexical entry in a lexicon using the @lemmaRef attribut",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中提到“part-of-speech information”但译文中没有提及。",
+      "建议": "在译文中添加“词性信息”。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中提到“它也可以通过部分-作用信息来描述”，但译文中没有提及这一点。",
+      "建议": "应将“它也可以通过部分-作用信息来描述”添加到译文中。"
+    }
+  },
+  {
+    "id": 12,
+    "reason": "“词形内容歧义”重复了8.2的题名，未表达原题“词汇及结构”。这里只修改标题的译义，不检查编号和目录。",
+    "baseline": "问题类型：漏译\n依据：原文中的“lexical and structural ambiguities”\n建议：将“lexical”改为“词汇”，以完整表达原文的意思。",
+    "baseline_sec": 0.9,
+    "evidence": "问题类型：漏译\n依据：原文“lexical”（词形）没有被翻译成中文。\n建议：将“lexical”翻译为“词形”。",
+    "evidence_sec": 0.9,
+    "evidence_text": "原文：8.3 Lexical and structural ambiguities\n译文：8.3 词汇和结构歧义\n\n原文：4.4 Structural ambiguities\n译文：4.4 结构歧义\n\n原文：This document does not apply to structural ambiguities or the structure and composition of morphosyntactic tagsets.\n译文：本文件不适用于结构歧义，也不适用于形态句法标记集的结构与组成。",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“lexical and structural ambiguities”",
+      "建议": "将“lexical”改为“词汇”，以完整表达原文的意思。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文“lexical”（词形）没有被翻译成中文。",
+      "建议": "将“lexical”翻译为“词形”。"
+    }
+  },
+  {
+    "id": 13,
+    "reason": "S0368：i.e.解释的是tagset，不是“编码方式”。原译将定义关系误作方法说明，又把“in the case at hand”的局部限定并入标记集的一般定义。分别表达编码方式、标记集定义和本例类别范围。",
+    "baseline": "问题类型：漏译\n依据：原文中的“i.e.”（意为“例如”）\n建议：将“i.e.”翻译成“例如”，以保持译文的一致性。",
+    "baseline_sec": 1.08,
+    "evidence": "问题类型：漏译\n依据：原文中的“encoding”一词\n建议：将“encoding”改为“编码”。",
+    "evidence_sec": 0.76,
+    "evidence_text": "原文：The example in Figure B.3 presents an fvLib element that collects the relevant feature values (most of them omitted). At the same time, this example shows one way of encoding a tagset, i.e. an established inventory of va\n译文：图B.3用`fvLib`汇集相关特征值，其中大部分省略。该示例也展示了标记集的一种编码方式。标记集是指一份既定的类别取值清单；本例所涉及的是形态句法类别。\n\n原文：“NN” is the symbol for common noun used, e.g. in the CLAWS-7 tagset (see Reference $[28]$ )",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“i.e.”（意为“例如”）",
+      "建议": "将“i.e.”翻译成“例如”，以保持译文的一致性。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“encoding”一词",
+      "建议": "将“encoding”改为“编码”。"
+    }
+  },
+  {
+    "id": 14,
+    "reason": "S0026：TBT所指协定的中文名称误写为“贸易技术壁垒协定”。应采用《技术性贸易壁垒协定》，不改变协定简称或英文原文。名称核验：商务部公布的该协定中文文本（https://policy.mofcom.gov.cn/pact/pactContent.shtml?id=3132）。",
+    "baseline": "问题类型：漏译\n依据：原文中缺少“关于”一词来连接前后内容。\n建议：在“关于标准的自愿性质、ISO有关合格评定的专门术语及表述的含义，以及ISO遵循世界贸易组织（WTO）《贸易技术壁垒协定》（TBT）原则的信息”前加上“关于”。",
+    "baseline_sec": 1.86,
+    "evidence": "问题类型：漏译\n依据：原文中“feedback”和“questions”\n建议：在译文中添加“反馈”和“问题”，以保持一致性和准确性。",
+    "evidence_sec": 0.97,
+    "evidence_text": "原文：Technical Barriers to Trade\n译文：技术性贸易壁垒\n\n原文：Any feedback or questions on this document should be directed to the user's national standards body. A complete listing of these bodies can be found at www.iso.org/members.html.\n译文：有关本文件的反馈或疑问，请提交用户所在国家的标准机构。这些机构的完整清单见www.iso.org/members.html。\n\n原文：Any feedback or questions on this document should be directed to the user's national standards body. A com",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中缺少“关于”一词来连接前后内容。",
+      "建议": "在“关于标准的自愿性质、ISO有关合格评定的专门术语及表述的含义，以及ISO遵循世界贸易组织（WTO）《贸易技术壁垒协定》（TBT）原则的信息”前加上“关于”。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中“feedback”和“questions”",
+      "建议": "在译文中添加“反馈”和“问题”，以保持一致性和准确性。"
+    }
+  },
+  {
+    "id": 15,
+    "reason": "第一项仅写“转写”，再次与“一般转写”失去区别；题名也可重排为先列功能再说示例。原序列和功能均保留。",
+    "baseline": "问题类型：漏译\n依据：原文中“transliteration”（转写）一词\n建议：将“转写”改为“转写”以保持一致性和准确性。",
+    "baseline_sec": 1.09,
+    "evidence": "问题类型：漏译\n依据：原文中的“Further”一词\n建议：将“Further”改为“Additional”，以保持一致性和准确性。",
+    "evidence_sec": 0.87,
+    "evidence_text": "原文：Figure 7 — Usage examples of the normalization and script conversion attributes\n译文：图7——规范化和文字体系转换属性的使用示例\n\n原文：The normalization strategy, the kind and granularity level of phonetic transcription, the type of general transcription used (if any), as well as the type of transliteration should all be described in the TEI header acco\n译文：规范化策略、语音转写的类型与粒度、一般转写的类型（采用一般转写时），以及字符转写的类型，均宜在该 MAF-TEI 文档所附的 T",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中“transliteration”（转写）一词",
+      "建议": "将“转写”改为“转写”以保持一致性和准确性。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“Further”一词",
+      "建议": "将“Further”改为“Additional”，以保持一致性和准确性。"
+    }
+  },
+  {
+    "id": 16,
+    "reason": "原文that provide annotation content限定数据类别；“为标注内容提供类别的语言数据类别”重复并改变该关系。",
+    "baseline": "问题类型：漏译\n依据：原文中提到“ISO 12620 和其他相关国际标准”。\n建议：将“和其他相关国际标准”改为“及其它相关的国际标准”。",
+    "baseline_sec": 1.15,
+    "evidence": "问题类型：漏译\n依据：原文中提到“注”字，但译文中没有体现。\n建议：在译文中加入“注”字，并将“注”后的句子翻译成中文。",
+    "evidence_sec": 1.22,
+    "evidence_text": "原文：ISO (the International Organization for Standardization) is a worldwide federation of national standards bodies (ISO member bodies). The work of preparing International Standards is normally carried out through ISO techn\n译文：ISO（国际标准化组织）是由各国标准化机构（ISO成员机构）组成的世界性联合会。国际标准的制定工作通常由ISO技术委员会承担。成员机构如对某一已设立技术委员会的领域感兴趣，均有权派代表参加该委员会。与ISO保持联络的政府和非政府国际组织也参与此项工作。在电工技术标准化的各个方面，ISO均与国际电工委员会（IEC）密切合\n\n原文：ISO (the",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中提到“ISO 12620 和其他相关国际标准”。",
+      "建议": "将“和其他相关国际标准”改为“及其它相关的国际标准”。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中提到“注”字，但译文中没有体现。",
+      "建议": "在译文中加入“注”字，并将“注”后的句子翻译成中文。"
+    }
+  },
+  {
+    "id": 17,
+    "reason": "原文whose IDs appear in different annotation documents限定ID分布；中文“出现在不同标注文档中的若干枚举组”把位置直接修饰组，遗漏了ID这一层。",
+    "baseline": "问题类型：漏译\n依据：原文中的“Group”和“another group or set of groups”\n建议：将“Group”改为“Group”，并将“another group or set of groups”改为“一组或多组”。",
+    "baseline_sec": 1.3,
+    "evidence": "问题类型：漏译\n依据：原文中的“group”和“set”\n建议：在译文中添加“组”和“集合”，以准确传达原文的意思。",
+    "evidence_sec": 0.99,
+    "evidence_text": "原文：term (3.8) that is applied to a group of objects (3.3) whose relevant properties are identical\n译文：用于一组相关属性相同的客体（3.3）的术语（3.8）\n\n原文：identifying acronyms as a group of up to n capital letters\n译文：将首字母缩略词识别为由不超过 n 个大写字母构成的组合。\n\n原文：The choice group for grammatical features is then referenced as a child of the appropriate element in the LBX schema. In the following example, the complex type includes a r",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“Group”和“another group or set of groups”",
+      "建议": "将“Group”改为“Group”，并将“another group or set of groups”改为“一组或多组”。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“group”和“set”",
+      "建议": "在译文中添加“组”和“集合”，以准确传达原文的意思。"
+    }
+  },
+  {
+    "id": 18,
+    "reason": "中心词identifiers缺失，使技术命名冲突看起来像语言词汇歧义。",
+    "baseline": "问题类型：漏译\n依据：原文中“homonym identifiers”（同形异义项）\n建议：将“homonym identifiers”翻译为“同形异义项”。",
+    "baseline_sec": 1.1,
+    "evidence": "问题类型：漏译\n依据：原文中的“homonym identifiers”（同形异义项）\n建议：在译文中添加“同形异义项”，以准确传达原文的意思。",
+    "evidence_sec": 1.18,
+    "evidence_text": "原文：The data model for annotations thus comprises a directed graph referencing n-dimensional regions of primary data as well as other annotations, in which nodes are associated with feature structures providing the annotatio\n译文：因此，标注的数据模型包含一个有向图，该图引用源数据的n维区域以及其他标注；图中节点关联提供标注内容的特征结构。LAF符合性要求标注方案本身与LAF数据模型同构，或能经映射成为与该模型同构的表示。\n\n原文：b) to furnish them with unique identifiers, so that they can be referen",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中“homonym identifiers”（同形异义项）",
+      "建议": "将“homonym identifiers”翻译为“同形异义项”。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“homonym identifiers”（同形异义项）",
+      "建议": "在译文中添加“同形异义项”，以准确传达原文的意思。"
+    }
+  },
+  {
+    "id": 19,
+    "reason": "对象被译成制品，易和original artefact混同；“一组或若干组”也不等于a list or set，列表与集合的区别丢失。",
+    "baseline": "问题类型：漏译\n依据：原文中的“More complex data objects”和“may consist of”\n建议：将“More complex data objects”改为“更复杂的数据对象”，以准确传达原文的意思。",
+    "baseline_sec": 1.27,
+    "evidence": "问题类型：漏译\n依据：原文中的“span”和“contiguous”\n建议：将“span of characters”改为“character span”，将“point at which a given temporal event begins or ends”改为“the beginning or end of a given temporal event”。",
+    "evidence_sec": 1.57,
+    "evidence_text": "原文：Note to entry: Stand-off annotations refer to specific locations in the primary data, by addressing character offsets, elements, etc. to which the annotation applies. Multiple stand-off annotation documents for a given t\n译文：注：分离式标注通过寻址字符偏移量、元素等，引用源数据中该标注所适用的特定位置。某一标注类型的多份分离式标注文档可以引用同一源数据文档，例如针对同一文本作出的两种不同词性标注。\n\n原文：In the general case, primary data does not contain markup of any kind. If markup ",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“More complex data objects”和“may consist of”",
+      "建议": "将“More complex data objects”改为“更复杂的数据对象”，以准确传达原文的意思。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“span”和“contiguous”",
+      "建议": "将“span of characters”改为“character span”，将“point at which a given temporal event begins or ends”改为“the beginning or end o"
+    }
+  },
+  {
+    "id": 20,
+    "reason": "【S0054】逻辑连接和情态未准确保留。and/or允许理论方法、资源侧重点分别或共同影响取值，不能只译成并列的“以及”；can vary表达可能变化，译为“会”过于确定。分别恢复“和／或”与“可能”。",
+    "baseline": "问题类型：漏译\n依据：原文中“possible values”没有被翻译成中文。\n建议：将“possible values”翻译为“可能的值”。",
+    "baseline_sec": 0.92,
+    "evidence": "问题类型：漏译\n依据：原文中的“perception”（感知）\n建议：将“perception”翻译成“感知”，以保持一致性和准确性。",
+    "evidence_sec": 0.98,
+    "evidence_text": "原文：Note 1 to entry: A person usually has more than one language register in their linguistic repertoire and can vary their use of language register according to their perception of what is appropriate for different purposes\n译文：注：一个人的语言储备中通常包含不止一种语域，并可根据其对不同目的或领域（3.2.1）中何种语域适宜的判断，调整语域的使用。\n\n原文：Citations of web-accessible digital language resources should be accompanied by a PID that resolves either ",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中“possible values”没有被翻译成中文。",
+      "建议": "将“possible values”翻译为“可能的值”。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“perception”（感知）",
+      "建议": "将“perception”翻译成“感知”，以保持一致性和准确性。"
+    }
+  },
+  {
+    "id": 21,
+    "reason": "【S0138】无依据的限制性增译。原文只要求相关用语在词汇系统中被接受并词汇化，没有规定该词汇系统须先由某部辞典记录。“辞典所记录的”增加了编纂或收录层面的条件，故删除，其他解释保留。",
+    "baseline": "问题类型：漏译\n依据：原文中的“metaphor”（隐喻）\n建议：将“metaphor”改为“隐喻”，以准确传达原文的意思。",
+    "baseline_sec": 1.01,
+    "evidence": "问题类型：漏译\n依据：原文中的“Metaphor in the context of etymology”没有对应的译文。\n建议：将“词源研究中的隐喻”改为“词源学中的隐喻”。",
+    "evidence_sec": 1.24,
+    "evidence_text": "原文：Camel case code: metaphor \n\nDefinition: The process of metaphor as a vehicle of lexical change is based in cognitive processes by which one concept from domain X is understood in terms of another concept from domain Y. T\n译文：驼峰式代码：metaphor\n\n定义：作为词汇变化手段的隐喻，基于这样一种认知过程：借助Y域的另一个概念来理解X域中的某个概念。词汇层面也反映了这一点，即使用另一概念域的词汇单位及／或词汇，来描述或指称某一域中的概念。这一过程的推动力，是源域实体与目标域实体在属性或内部结构上的本体论对应关系。\n\n来源：改编自参考文献[\n\n原文：In a lan",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“metaphor”（隐喻）",
+      "建议": "将“metaphor”改为“隐喻”，以准确传达原文的意思。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“Metaphor in the context of etymology”没有对应的译文。",
+      "建议": "将“词源研究中的隐喻”改为“词源学中的隐喻”。"
+    }
+  },
+  {
+    "id": 22,
+    "reason": "【S0040】动作含义增译。having表示“具有”，并非由编纂者给对象“赋予”一个词源。3.3把词源界定为词汇单位的起源和历史发展；本定义应表述满足具有词源的条件，不引入人为赋予的动作。既有术语名称保留。",
+    "baseline": "问题类型：漏译\n依据：原文中的“etymology”（词源）\n建议：将“词源”改为“etymology”，以准确传达原文的意思。",
+    "baseline_sec": 0.96,
+    "evidence": "问题类型：漏译\n依据：原文中的“etymology”\n建议：将“词源”改为“词源分析”。",
+    "evidence_sec": 0.78,
+    "evidence_text": "原文：## 3.2\n\n## etymologizable\n\nmeeting the conditions for having an etymology (3.3) \n\nNote 1 to entry: \"Etymologizable\" is a category of lexical elements and usages (encompassing for instance lexical entries, senses, word fo\n译文：3.2\n\n可作词源分析的\n\n满足具有词源（3.3）的条件。\n\n条目注1：“可作词源分析的”这一类别包括词条、义项、词形等词汇要素及其用法。\n\n原文：4.3 The Etymology class and the EtyLink class\n译文：4.3 Etymology类与EtyLink类\n\n原文：## 3.3\n\n## etymology\n\n",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“etymology”（词源）",
+      "建议": "将“词源”改为“etymology”，以准确传达原文的意思。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“etymology”",
+      "建议": "将“词源”改为“词源分析”。"
+    }
+  },
+  {
+    "id": 23,
+    "reason": "【S0118】主宾关系缺失且指称不清。“由逐字译成本语言而来”未交代被翻译的对象，结构也不完整；borrowing language是实施借入的语言，不应笼统称“本语言”。改为将原词语直译成借入语，保留“只借入意义”和借词这一上位概念。",
+    "baseline": "问题类型：漏译\n依据：原文中的“only the meaning”和“literally”\n建议：将“only the meaning”改为“only the meaning”，并将“literally”移至“翻译”之前。",
+    "baseline_sec": 1.25,
+    "evidence": "问题类型：漏译\n依据：原文中提到的“only the meaning is borrowed”，但译文中没有明确表达这一点。\n建议：在定义中加入“仅借入意义”的说明。",
+    "evidence_sec": 1.14,
+    "evidence_text": "原文：Camel case code: calque \n\nDefinition: A loanword in which only the meaning is borrowed with the term being literally translated into the borrowing language. \n\nSource: Reference [5]. \n\nExample: Spanish rascacielos (rasca \n译文：驼峰式代码：calque\n\n定义：一种只借入意义、通过将原词语直译成借入语而形成的借词。\n\n来源：参考文献[5]。\n\n示例：西班牙语rascacielos（rasca“抓、刮”+ cielos“天空”）来自英语skyscraper。\n\n其他术语：借译、语义借用\n\n原文：A set of annual reports in English ali",
+    "base_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中的“only the meaning”和“literally”",
+      "建议": "将“only the meaning”改为“only the meaning”，并将“literally”移至“翻译”之前。"
+    },
+    "ev_parts": {
+      "问题类型": "漏译",
+      "依据": "原文中提到的“only the meaning is borrowed”，但译文中没有明确表达这一点。",
+      "建议": "在定义中加入“仅借入意义”的说明。"
+    }
+  }
+]
